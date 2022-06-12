@@ -1,12 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/*font-family: 'Montserrat', sans-serif;*/
+
+@import url("header.css");
+
 :root {
+  --background: #282b38;
+  --background-second: #363A4D;
+  --button-orange: #E58D35;
 }
 
 body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  background-color: var(--background);
+  font-family: 'Montserrat', sans-serif;
 }
 
-body {
-  background-color: silver;
+main {
+  max-width: 1920px;
+  margin: 0 auto;
 }

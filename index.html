@@ -6,11 +6,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cargo</title>
-    <link rel="stylesheet" href="/style/common.css">
+    <link rel="stylesheet" href="style/common.css">
 </head>
 
 <body>
+    <header class="header">
+        <div class="header__wrap">
+            <nav class="nav">
+                    <div class="logo">
+                        <img src="img/logo.png" alt="">
+                    </div>
+                    <div id="mainListDiv" class="main_list">
+                        <ul class="navlinks">
+                            <li class="i1"><a href="#">Цены и сроки</a></li>
+                            <li class="i2"><a href="#">Услуги</a></li>
+                            <li class="i3"><a href="#">О компании</a></li>
+                            <li class="i4"><a href="#">Контакты</a></li>
+                            <li class="i5"><a href="#">Оформить груз</a></li>
+                            <li class="i6"><button class="orange-btn">Оставить заявку</button></li>
+                        </ul>
+                    </div>
+                    <span class="navTrigger">
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                    </span>
+            </nav>
+        </div>
+    </header>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/burger.js"></script>
+    <script>
+        $(window).scroll(function () {
+            if ($(document).scrollTop() > 50) {
+                $('.nav').addClass('affix');
+                console.log("OK");
+            } else {
+                $('.nav').removeClass('affix');
+            }
+        });
+    </script>
 </body>
 
 </html>
