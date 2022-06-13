@@ -3,7 +3,7 @@
   margin: 0 auto;
 }
 .swiper {
-  height: 670px;
+  height: 675px;
   width: 100%;
   background-color: transparent;
   position: relative;
@@ -69,28 +69,30 @@
   .swiper-pagination-bullets.swiper-pagination-horizontal,
   .swiper-pagination-custom,
   .swiper-pagination-fraction {
-    bottom: 70px;
+    bottom: 50px;
   }
   .swiper-pagination-bullet {
     width: 10px;
     height: 10px;
-    border: 3px solid white;
+    border: 3px solid var(--white);
   }
 
   .swiper-button-next:after,
   .swiper-rtl .swiper-button-prev:after {
     position: absolute;
     left: -70px;
+    color: var(--white);
   }
   .swiper-button-prev:after,
   .swiper-rtl .swiper-button-next:after {
     position: absolute;
     right: -70px;
+    color: var(--white);
   }
 }
 @media screen and (min-width: 1140px) {
   .swiper .swiper-slide .benefits-main-wrap {
-    left: 15%;
+    left: 19%;
     top: 25;
     width: 70%;
     text-align: start;
