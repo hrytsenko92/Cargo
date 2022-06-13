@@ -10,7 +10,8 @@
   display: flex;
   justify-items: center;
   border-radius: 40px;
-  align-items: center; }
+  align-items: center;
+  filter: drop-shadow(5px 15px 40px rgba(11, 24, 97, 0.32)); }
   .swiper .swiper-slide {
     position: relative; }
     .swiper .swiper-slide .benefits-main-wrap {

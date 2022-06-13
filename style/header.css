@@ -34,7 +34,9 @@
   background-color: var(--button-orange);
   border-radius: 90px;
   border: none;
-  padding-right: 0; }
+  padding-right: 0;
+  color: var(--white);
+  font-size: 18px; }
 
 .nav div.main_list ul li {
   width: auto;
