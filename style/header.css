@@ -1,7 +1,8 @@
-.header__wrap {
+.header {
   position: relative;
   max-width: 1140px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  height: 100px; }
 
 .nav {
   width: 100%;

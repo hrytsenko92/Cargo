@@ -1,0 +1,92 @@
+.benefits {
+  max-width: 95%;
+  margin: 0 auto; }
+
+.swiper {
+  height: 670px;
+  width: 100%;
+  background-color: transparent;
+  position: relative;
+  display: flex;
+  justify-items: center;
+  border-radius: 40px;
+  align-items: center; }
+  .swiper .swiper-slide {
+    position: relative; }
+    .swiper .swiper-slide .benefits-main-wrap {
+      position: absolute;
+      top: 15%;
+      left: 5%;
+      width: 90%;
+      height: 50%;
+      z-index: 30;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: space-around;
+      align-items: center;
+      text-align: center; }
+      .swiper .swiper-slide .benefits-main-wrap .benefits__h2 {
+        font-size: 32px;
+        font-weight: 700;
+        color: var(--white); }
+      .swiper .swiper-slide .benefits-main-wrap .benefits__p {
+        font-size: 16px;
+        font-weight: 300;
+        color: var(--white); }
+      .swiper .swiper-slide .benefits-main-wrap .benefits__btn {
+        width: 295px;
+        height: 68px;
+        border-radius: 33px;
+        border: none;
+        background-color: var(--button-orange);
+        color: var(--white);
+        font-size: 16px;
+        font-weight: 600;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none; }
+        .swiper .swiper-slide .benefits-main-wrap .benefits__btn .btn-arrow {
+          width: 25px;
+          height: 25px;
+          object-fit: cover;
+          object-position: center;
+          aspect-ratio: 1/1;
+          margin-left: 10px; }
+    .swiper .swiper-slide .slider_image {
+      width: 100%;
+      height: 100%;
+      background-position: center; }
+  .swiper .swiper-horizontal > .swiper-pagination-bullets, .swiper .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper .swiper-pagination-custom, .swiper .swiper-pagination-fraction {
+    bottom: 70px; }
+  .swiper .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    border: 3px solid white; }
+  .swiper .swiper-button-next:after, .swiper .swiper-rtl .swiper-button-prev:after {
+    position: absolute;
+    left: -70px; }
+  .swiper .swiper-button-prev:after, .swiper .swiper-rtl .swiper-button-next:after {
+    position: absolute;
+    right: -70px; }
+
+@media screen and (min-width: 1140px) {
+  .swiper .swiper-slide .benefits-main-wrap {
+    left: 15%;
+    top: 25;
+    width: 70%;
+    text-align: start;
+    align-items: start;
+    justify-content: center;
+    gap: 1rem; }
+    .swiper .swiper-slide .benefits-main-wrap .benefits__h2 {
+      width: 50%; } }
+@media screen and (max-width: 1140px) {
+  .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+    display: none; }
+
+  .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+    display: none; } }
+
+/*# sourceMappingURL=benefits.css.map */

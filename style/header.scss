@@ -1,7 +1,8 @@
-.header__wrap {
+.header{
   position: relative;
   max-width: 1140px;
   margin: 0 auto;
+  height: 100px;
 }
 .nav {
   width: 100%;
@@ -14,7 +15,6 @@
   float: left;
   width: auto;
   height: auto;
-  // padding-left: 3rem;
   padding-top: 0.5rem;
 }
 
@@ -79,6 +79,7 @@
   }
   .navTrigger {
     display: block;
+    
   }
   .nav div.logo {
     margin-left: 15px;
@@ -129,6 +130,7 @@
   right: 50px;
   top: 0;
   bottom: 0;
+  
 }
 
 .navTrigger i {

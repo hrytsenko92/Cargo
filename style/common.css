@@ -1,12 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 /*font-family: 'Montserrat', sans-serif;*/
 
+
+
 @import url("header.css");
+@import url("benefits.css");
 
 :root {
   --background: #282b38;
   --background-second: #363A4D;
   --button-orange: #E58D35;
+  --button-prange-dark: #B26519;
+  --white: #FFFFFF;
+  width: 100%;
+  height: auto;
 }
 
 body {
@@ -15,9 +22,12 @@ body {
   box-sizing: border-box;
   background-color: var(--background);
   font-family: 'Montserrat', sans-serif;
+  width: 100%;
+  height: auto;
 }
 
 main {
   max-width: 1920px;
   margin: 0 auto;
 }
+
