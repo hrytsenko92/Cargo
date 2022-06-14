@@ -5,13 +5,17 @@
 
 @import url("header.css");
 @import url("benefits.css");
+@import url("cost-calculation.css");
 
 :root {
   --background: #282b38;
   --background-second: #363A4D;
   --button-orange: #E58D35;
   --button-prange-dark: #B26519;
+  --button-grey: #BFBFBF;
   --white: #FFFFFF;
+  --tab-bgc: #89C249;
+  --delete-red: #E53535;
   width: 100%;
   height: auto;
 }

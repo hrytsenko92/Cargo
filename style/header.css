@@ -66,7 +66,8 @@
 
 @media screen and (max-width: 1140px) {
   .nav {
-    position: fixed; }
+    position: fixed;
+    z-index: 50; }
 
   .navTrigger {
     display: block; }
