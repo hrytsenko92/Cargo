@@ -114,87 +114,104 @@
       </div>
     </section>
     <section class="cost-calculation">
-      <div class="warpper">
-        <input class="radio" id="one" name="group" type="radio" checked>
-        <input class="radio" id="two" name="group" type="radio">
-        <input class="radio" id="three" name="group" type="radio">
-
-        <div class="tabs">
-          <label class="tab" id="one-tab" for="one"><span>Tab1</span></label>
-          <label class="tab" id="two-tab" for="two"><span>Tab2</span></label>
-          <label class="tab" id="three-tab" for="three"><span>Tab3</span></label>
+      <div class="cost-calculation-container">
+        <div class="title">
+          <span class="title-span">Получить рассчет стоимости
+            доставки вашего груза</span>
+          <div class="title-line"></div>
         </div>
-
-        <div class="panels">
-          <div class="panel" id="one-panel">
-            <form method="post" enctype="application/x-www-form-urlencoded" action="www.exp.com">
-              <p>
+      </div>
+      <div class="wrapper-form">
+        <div class="warpper">
+          <input class="radio" id="one" name="group" type="radio" checked>
+          <input class="radio" id="two" name="group" type="radio">
+          <input class="radio" id="three" name="group" type="radio">
+  
+          <div class="tabs">
+            <label class="tab" id="one-tab" for="one"><span>1</span></label>
+            <label class="tab" id="two-tab" for="two"><span>2</span></label>
+            <label class="tab" id="three-tab" for="three"><span>3</span></label>
+          </div>
+  
+          <div class="panels">
+            <div class="panel" id="one-panel">
+              <form method="post" enctype="application/x-www-form-urlencoded" action="www.exp.com">
+                <p>
                 <p><label for="category">Категория товара:</label></p>
-              <input name="category" id="category" placeholder="Категория товара">
-              </p>
-            <p>
+                <input name="category" id="category" placeholder="Категория товара">
+                </p>
+                <p>
                 <p><label for="price">Стоимость груза:</label></p>
-              <input name="price" id="price" placeholder="Введите стоимость">
-              </p>
-            <p>
+                <input name="price" id="price" placeholder="Введите стоимость">
+                </p>
+                <p>
                 <p><label for="weight">Вес груза (кг):</label></p>
-              <input name="weight" id="weight" placeholder="Введите вес">
-              </p>
-            <p>
-            <p><span><label for="capacity">Объем груза (м3):</label></span><span> <a href="www.exp.com">Рассчитать</a> </span></p>
-            <p><input name="capacity" id="capacity" placeholder="Введите объем"></p>
-              </p>
-            <p>
-              <p><input type="checkbox" name="insurance"><span>  Страховка</span></p>
-              <p><input checked type="checkbox" name="Customs-clearance"><span>  Таможенное оформление</span></p>
-            </p>
-            <p>
+                <input name="weight" id="weight" placeholder="Введите вес">
+                </p>
+                <p>
+                <p><span><label for="capacity">Объем груза (м3):</label></span><span> <a href="www.exp.com">Рассчитать</a>
+                  </span></p>
+                <p><input name="capacity" id="capacity" placeholder="Введите объем"></p>
+                </p>
+                <p>
+                <p><input type="checkbox" name="insurance"><span> Страховка</span></p>
+                <p><input checked type="checkbox" name="Customs-clearance"><span> Таможенное оформление</span></p>
+                </p>
+                <p>
                 <p><label for="product-code">Код ТН ВЭД:</label></p>
-              <input name="product-code" id="product-code" placeholder="Введите код">
-              </p>
-            <p>
-                <span><label for="upload-photo">фотография.jpeg</label></span><span><input type="reset" name="reset"></span>
-              <input type="file" name="upload-photo" id="upload-photo" placeholder="Введите код">
-              </p>
-            <p><button>Следующий шаг</button></p>
-              
-          </div>
-          <div class="panel" id="two-panel">
-            <form method="post" enctype="application/x-www-form-urlencoded" action="www.exmpl.com">
-              <p>
+                <input name="product-code" id="product-code" placeholder="Введите код">
+                </p>
+                <p>
+                  <span><label for="upload-photo">фотография.jpeg</label></span><span><input type="reset"
+                      name="reset"></span>
+                  <input type="file" name="upload-photo" id="upload-photo" placeholder="Введите код">
+                </p>
+                <p><button>Следующий шаг</button></p>
+  
+            </div>
+            <div class="panel" id="two-panel">
+              <form method="post" enctype="application/x-www-form-urlencoded" action="www.exmpl.com">
+                <p>
                 <p><label for="custname">Имя:</label></p>
-                <input name="custname" id="custname" required autocomplete="shipping name" placeholder="Ваше имя">  
-              </p>
-               <p>
-                 <p><label for="custtel">Номер телефона:</label></p>
-                 <input type=tel name="custtel" id="custtel" autocomplete="shipping tel" placeholder="+38 (___) ___ - _ - ___">
-               </p>
-              <p>
+                <input name="custname" id="custname" required autocomplete="shipping name" placeholder="Ваше имя">
+                </p>
+                <p>
+                <p><label for="custtel">Номер телефона:</label></p>
+                <input type=tel name="custtel" id="custtel" autocomplete="shipping tel"
+                  placeholder="+38 (___) ___ - _ - ___">
+                </p>
+                <p>
                 <p><label for="custemail">Email:</label></p>
-                <input type=email name="custemail" id="custemail" autocomplete="shipping email" placeholder="Введите e-mail">
-              </p>
-              <p>
+                <input type=email name="custemail" id="custemail" autocomplete="shipping email"
+                  placeholder="Введите e-mail">
+                </p>
+                <p>
                 <p><label for="text-form">Комментарий:</label></p>
-                <textarea name="" id="text-form" placeholder="Подробности о товаре, описание, количество">               </textarea>
-              </p>
-             <p><button>Назад</button><button>Следующий шаг</button></p> 
-            </form>
+                <textarea name="" id="text-form"
+                  placeholder="Подробности о товаре, описание, количество">               </textarea>
+                </p>
+                <p><button>Назад</button><button>Следующий шаг</button></p>
+              </form>
+            </div>
+            <div class="panel" id="three-panel">
+              <div><img src="img/big-like.png" alt=""></div>
+              <span>Спасибо за заявку!</span>
+              <span>Мы обязатальено свяжемся с вами.</span>
+              <div>
+                <span>Так же для вас может быть полезно:</span>
+                <ul>
+                  <li>Услуги</li>
+                  <li>Примеры грузоперевозок</li>
+                  <li>Поиск товаров в Китае</li>
+                </ul>
+              </div>
+  
+            </div>
           </div>
-          <div class="panel" id="three-panel">
-           <div><img src="img/big-like.png" alt=""></div>
-           <span>Спасибо за заявку!</span>
-           <span>Мы обязатальено свяжемся с вами.</span>
-           <div>
-            <span>Так же для вас может быть полезно:</span>
-            <ul>
-              <li>Услуги</li>
-              <li>Примеры грузоперевозок</li>
-              <li>Поиск товаров в Китае</li>
-            </ul>
-           </div>
-           
-          </div>
-        </div>
+         </div>
+      </div>
+      <div class="man-in-cask">
+        <img class="man-in-cask-img" src="img/man-in-cask.png" alt="man-in-cask">
       </div>
     </section>
   </main>
@@ -216,51 +233,3 @@
 </body>
 
 </html>
-
-<!-- /img/benef_sl1.png -->
-<!-- <div class="slide bg_1">
-  <h2 class="benefits__h2">
-    Прямое КАРГО из&nbsp;Китая
-  </h2>
-  <p class="benefits__p">
-    Доставляем любые грузы из&nbsp;Китая по&nbsp;честной цене
-  </p>
-  <button class="benefits__btn">
-    Рассчитать стоимость
-  </button>
-</div>
-<div class="slide bg_2">
-  <h2 class="benefits__h2">
-    Гарантируем сроки!
-  </h2>
-  <p class="benefits__p">
-    Если мы&nbsp;не&nbsp;уложимся в&nbsp;обозначенные сроки,
-    доставка груза со&nbsp;скидкой до&nbsp;90%
-  </p>
-  <button class="benefits__btn">
-    Рассчитать стоимость
-  </button>
-</div>
-<div class="slide bg_3">
-  <h2 class="benefits__h2">
-    Выкуп товара с&nbsp;ТаоБао, 1688
-  </h2>
-  <p class="benefits__p">
-    Выкуп и&nbsp;доставка товаров
-с&nbsp;китайских торговых площадок.
-  </p>
-  <button class="benefits__btn">
-    Рассчитать стоимость
-  </button>
-</div>
-<div class="slide bg_4">
-  <h2 class="benefits__h2">
-    Экспресс авто доставка
-  </h2>
-  <p class="benefits__p">
-    Доставка автотранспортом из&nbsp;Китая в&nbsp;Украину от&nbsp;15&nbsp;дней, от&nbsp;$0,5/кг
-  </p>
-  <button class="benefits__btn">
-    Рассчитать стоимость
-  </button>
-</div> -->

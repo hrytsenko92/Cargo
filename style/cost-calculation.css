@@ -1,10 +1,36 @@
 .cost-calculation {
   margin: 0 auto;
-  margin-top: 150px; }
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 3fr;
+  justify-items: center;
+  width: 95%; }
+  .cost-calculation .cost-calculation-container {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin: 50px 0; }
+    .cost-calculation .cost-calculation-container .title {
+      width: 70%;
+      margin: 0 auto;
+      text-align: center; }
+      .cost-calculation .cost-calculation-container .title .title-span {
+        font-size: 36px;
+        font-weight: 700;
+        display: block;
+        color: var(--white); }
+      .cost-calculation .cost-calculation-container .title .title-line {
+        display: inline-block;
+        border: 2px solid var(--tab-bgc);
+        height: 0px;
+        width: 85px;
+        margin-bottom: 2px; }
+
+.wrapper-form {
+  grid-column: 1/2;
+  grid-row: 2/3; }
 
 .warpper {
   position: relative;
-  width: 626px;
   height: 597px;
   display: flex;
   flex-direction: column;
@@ -16,15 +42,16 @@
 .tabs {
   position: absolute;
   margin-top: -30px;
-  left: 8%;
+  left: 10%;
+  min-width: 80%;
   display: flex;
-  flex-flow: row nowrap; }
+  flex-flow: row nowrap;
+  justify-content: space-between; }
 
 .tab {
   cursor: pointer;
   width: 60px;
   height: 60px;
-  margin-right: 30px;
   background: var(--background);
   display: flex;
   flex-flow: row nowrap;
@@ -39,7 +66,6 @@
 .panels {
   padding: 50px 20px 20px;
   background: var(--background-second);
-  width: 100%;
   height: 100%;
   border-radius: 25px;
   overflow: hidden; }
@@ -70,5 +96,8 @@
 #three:checked ~ .tabs #three-tab {
   background: var(--tab-bgc);
   color: var(--white); }
+
+.man-in-cask {
+  display: none; }
 
 /*# sourceMappingURL=cost-calculation.css.map */
