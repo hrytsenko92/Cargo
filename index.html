@@ -149,7 +149,7 @@
                 <input name="weight" id="weight" placeholder="Введите вес">
                 </p>
                 <p>
-                <p><span><label for="capacity">Объем груза (м3):</label></span><span> <a href="www.exp.com">Рассчитать</a>
+                <p><span><label for="capacity">Объем груза (м3):</label></span><span> <a class="capacity-a"href="www.exp.com">Рассчитать</a>
                   </span></p>
                 <p><input name="capacity" id="capacity" placeholder="Введите объем"></p>
                 </p>
@@ -163,10 +163,11 @@
                 </p>
                 <p>
                   <span><label for="upload-photo">фотография.jpeg</label></span><span><input type="reset"
-                      name="reset"></span>
-                  <input type="file" name="upload-photo" id="upload-photo" placeholder="Введите код">
+                      name="reset" id="reset" value="Удалить фото"></span>
+                      <button class="upload-photo-btn" onclick="document.getElementById('upload-photo').click()">Загрузить фото товара</button>
+                  <input type="file" name="upload-photo" id="upload-photo" style="display:none">
                 </p>
-                <p><button>Следующий шаг</button></p>
+                <p><button class="one-panel-btn"><span>Следующий шаг</span><img src="/img/btn-arrow-orange.png" alt="btn-arrow"></button></p>
   
             </div>
             <div class="panel" id="two-panel">
@@ -188,9 +189,9 @@
                 <p>
                 <p><label for="text-form">Комментарий:</label></p>
                 <textarea name="" id="text-form"
-                  placeholder="Подробности о товаре, описание, количество">               </textarea>
+                  placeholder="Подробности о товаре, описание, количество"></textarea>
                 </p>
-                <p><button>Назад</button><button>Следующий шаг</button></p>
+                <p class="two-panel-btn"><button id="two-panel-btn-prev">Назад</button><button id="two-panel-btn-next">Следующий шаг</button></p>
               </form>
             </div>
             <div class="panel" id="three-panel">
