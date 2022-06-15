@@ -6,7 +6,7 @@
   justify-items: center;
   align-items: start;
   width: 95%;
-  .cost-calculation-container {
+  .cost-calculation-title {
     grid-column: 1/2;
     grid-row: 1/2;
     margin: 50px 0;
@@ -32,11 +32,13 @@
   .wrapper-form {
     grid-column: 1/2;
     grid-row: 2/3;
-    //   width: 100%;
+ 
+    // max-width: 626px;
     .warpper {
       position: relative;
       //   width: 625px;
       //   height: 597px;
+      min-width: 99%;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -48,7 +50,7 @@
       position: absolute;
       margin-top: -30px;
       left: 10%; //8%
-      min-width: 80%; //min-width
+      min-width: 80%; 
       display: flex;
       flex-flow: row nowrap;
       justify-content: space-between; //delete
@@ -73,7 +75,8 @@
     .panels {
       padding: 50px 20px 20px;
       background: var(--background-second);
-      // width: 100%;
+      width: 90%;
+      min-width: 200px;
       height: 100%;
       border-radius: 25px;
       overflow: hidden;
@@ -82,9 +85,8 @@
     .panel {
       display: none;
       animation: fadein 0.1s;
-      input::placeholder {
-        padding-left: 20px;
-        font-size: 14px;
+      input {
+        display: inline-block;
       }
       #category,
       #price,
@@ -94,10 +96,13 @@
       #custname,
       #custtel,
       #custemail {
-        width: 260px;
+        min-width: 90%;
+        // max-width: 626px;
         height: 55px;
         border-radius: 10px;
         border: none;
+        padding-left: 25px;
+        margin: 22px 0;
       }
       .upload-photo-btn {
         margin: 25px 0;
@@ -112,12 +117,46 @@
       .capacity-a {
         color: var(--button-prange-dark);
       }
-      #reset {
-        color: var(--delete-red);
-        border: none;
-        background-color: inherit;
-        text-decoration: underline;
+      #upload-photo-form {
+        .upload-photo-form-exmpl-reset {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+        #reset {
+            color: var(--delete-red);
+            border: none;
+            background-color: inherit;
+            text-decoration: underline;
+          }
+        .upload-photo-wrap {
+            margin: 15px 0;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: center;
+            border: 1px dashed var(--button-grey);
+            border-radius: 10px;
+            
+            #upload-input-wrap {
+                width: 260px;
+                height: 40px;
+                border-radius: 10px;
+                align-self: center;
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: center;
+                align-items: center;
+                padding: 6px 12px;
+                cursor: pointer;
+                #upload-input {
+                    display: none;
+                  }
+              }
+          }    
       }
+     
       #text-form {
         width: 260px;
         height: 50px;
@@ -128,45 +167,50 @@
         padding-left: 20px;
         padding-top: 10px;
       }
-      .one-panel-btn {
-        width: 260px;
-        height: 60px;
-        border-radius: 90px;
-        background-color: var(--button-orange);
-        border: none;
+      .one-panel-btn-wrap {
         display: flex;
         flex-flow: row nowrap;
         justify-content: center;
         align-items: center;
-        span {
-          padding-right: 20px;
-        }
+        .one-panel-btn {
+            width: 260px;
+            height: 60px;
+            border-radius: 90px;
+            background-color: var(--button-orange);
+            border: none;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: center;
+            span {
+              padding-right: 20px;
+            }
+          }
       }
       .two-panel-btn {
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-around;
         align-items: center;
-        
+
         #two-panel-btn-prev {
-            width: 30%;
-            height: 40px;
-            border-radius: 90px;
-            border: 1px solid var(--button-orange);
-            background-color: inherit;
-            margin-right: 10%;
-            color: var(--white);
-          }
-          #two-panel-btn-next {
-            width: 40%;
-            height: 40px;
-            border-radius: 90px;
-            background-color: var(--button-orange);
-            border: none;
-            color: var(--white);
-          }
+          width: 30%;
+          height: 40px;
+          border-radius: 90px;
+          border: 1px solid var(--button-orange);
+          background-color: inherit;
+          margin-right: 10%;
+          color: var(--white);
+        }
+        #two-panel-btn-next {
+          width: 40%;
+          height: 40px;
+          border-radius: 90px;
+          background-color: var(--button-orange);
+          border: none;
+          color: var(--white);
+        }
       }
-     
     }
 
     @keyframes fadein {
@@ -204,4 +248,20 @@
   .man-in-cask {
     display: none;
   }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .wrapper-form {
+        min-width: 89%;
+    } 
+}
+@media screen and (min-width: 768px) {
+    .wrapper-form  {
+        width: 625px;
+        height: 597px;
+        // min-width: none;
+    }
+    .panels, .warpper {
+          max-width: 100%;
+          max-height: 100%;
+    }
 }

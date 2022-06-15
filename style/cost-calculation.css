@@ -6,20 +6,20 @@
   justify-items: center;
   align-items: start;
   width: 95%; }
-  .cost-calculation .cost-calculation-container {
+  .cost-calculation .cost-calculation-title {
     grid-column: 1/2;
     grid-row: 1/2;
     margin: 50px 0; }
-    .cost-calculation .cost-calculation-container .title {
+    .cost-calculation .cost-calculation-title .title {
       width: 70%;
       margin: 0 auto;
       text-align: center; }
-      .cost-calculation .cost-calculation-container .title .title-span {
+      .cost-calculation .cost-calculation-title .title .title-span {
         font-size: 36px;
         font-weight: 700;
         display: block;
         color: var(--white); }
-      .cost-calculation .cost-calculation-container .title .title-line {
+      .cost-calculation .cost-calculation-title .title .title-line {
         display: inline-block;
         border: 2px solid var(--tab-bgc);
         height: 0px;
@@ -30,6 +30,7 @@
     grid-row: 2/3; }
     .cost-calculation .wrapper-form .warpper {
       position: relative;
+      min-width: 99%;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -61,6 +62,8 @@
     .cost-calculation .wrapper-form .panels {
       padding: 50px 20px 20px;
       background: var(--background-second);
+      width: 90%;
+      min-width: 200px;
       height: 100%;
       border-radius: 25px;
       overflow: hidden;
@@ -68,9 +71,8 @@
     .cost-calculation .wrapper-form .panel {
       display: none;
       animation: fadein 0.1s; }
-      .cost-calculation .wrapper-form .panel input::placeholder {
-        padding-left: 20px;
-        font-size: 14px; }
+      .cost-calculation .wrapper-form .panel input {
+        display: inline-block; }
       .cost-calculation .wrapper-form .panel #category,
       .cost-calculation .wrapper-form .panel #price,
       .cost-calculation .wrapper-form .panel #weight,
@@ -79,10 +81,12 @@
       .cost-calculation .wrapper-form .panel #custname,
       .cost-calculation .wrapper-form .panel #custtel,
       .cost-calculation .wrapper-form .panel #custemail {
-        width: 260px;
+        min-width: 90%;
         height: 55px;
         border-radius: 10px;
-        border: none; }
+        border: none;
+        padding-left: 25px;
+        margin: 22px 0; }
       .cost-calculation .wrapper-form .panel .upload-photo-btn {
         margin: 25px 0;
         display: block;
@@ -94,11 +98,37 @@
         color: var(--button-grey); }
       .cost-calculation .wrapper-form .panel .capacity-a {
         color: var(--button-prange-dark); }
-      .cost-calculation .wrapper-form .panel #reset {
+      .cost-calculation .wrapper-form .panel #upload-photo-form .upload-photo-form-exmpl-reset {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center; }
+      .cost-calculation .wrapper-form .panel #upload-photo-form #reset {
         color: var(--delete-red);
         border: none;
         background-color: inherit;
         text-decoration: underline; }
+      .cost-calculation .wrapper-form .panel #upload-photo-form .upload-photo-wrap {
+        margin: 15px 0;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        border: 1px dashed var(--button-grey);
+        border-radius: 10px; }
+        .cost-calculation .wrapper-form .panel #upload-photo-form .upload-photo-wrap #upload-input-wrap {
+          width: 260px;
+          height: 40px;
+          border-radius: 10px;
+          align-self: center;
+          display: flex;
+          flex-flow: row nowrap;
+          justify-content: center;
+          align-items: center;
+          padding: 6px 12px;
+          cursor: pointer; }
+          .cost-calculation .wrapper-form .panel #upload-photo-form .upload-photo-wrap #upload-input-wrap #upload-input {
+            display: none; }
       .cost-calculation .wrapper-form .panel #text-form {
         width: 260px;
         height: 50px;
@@ -107,18 +137,23 @@
       .cost-calculation .wrapper-form .panel #text-form::placeholder {
         padding-left: 20px;
         padding-top: 10px; }
-      .cost-calculation .wrapper-form .panel .one-panel-btn {
-        width: 260px;
-        height: 60px;
-        border-radius: 90px;
-        background-color: var(--button-orange);
-        border: none;
+      .cost-calculation .wrapper-form .panel .one-panel-btn-wrap {
         display: flex;
         flex-flow: row nowrap;
         justify-content: center;
         align-items: center; }
-        .cost-calculation .wrapper-form .panel .one-panel-btn span {
-          padding-right: 20px; }
+        .cost-calculation .wrapper-form .panel .one-panel-btn-wrap .one-panel-btn {
+          width: 260px;
+          height: 60px;
+          border-radius: 90px;
+          background-color: var(--button-orange);
+          border: none;
+          display: flex;
+          flex-flow: row nowrap;
+          justify-content: center;
+          align-items: center; }
+          .cost-calculation .wrapper-form .panel .one-panel-btn-wrap .one-panel-btn span {
+            padding-right: 20px; }
       .cost-calculation .wrapper-form .panel .two-panel-btn {
         display: flex;
         flex-flow: row nowrap;
@@ -160,5 +195,17 @@
       color: var(--white); }
   .cost-calculation .man-in-cask {
     display: none; }
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .wrapper-form {
+    min-width: 89%; } }
+@media screen and (min-width: 768px) {
+  .wrapper-form {
+    width: 625px;
+    height: 597px; }
+
+  .panels, .warpper {
+    max-width: 100%;
+    max-height: 100%; } }
 
 /*# sourceMappingURL=cost-calculation.css.map */
