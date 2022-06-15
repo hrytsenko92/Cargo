@@ -135,38 +135,43 @@
 
           <div class="panels">
             <div class="panel" id="one-panel">
-              <form method="post" enctype="application/x-www-form-urlencoded" action="www.exp.com">
+              <form method="post" class="form-catalog" enctype="application/x-www-form-urlencoded" action="www.exp.com">
                 <div>
-                <div><label for="category">Категория товара:</label></div>
-                <input name="category" id="category" placeholder="Категория товара">
+                  <div><label for="category">Категория товара:</label></div>
+                  <input name="category" id="category" placeholder="   Категория товара">
+                </div>
+                <div class="form-catalog__input-price">
+                  <div><label for="price">Стоимость груза:</label></div>
+                  <input name="price" id="price" placeholder="Введите стоимость">
                 </div>
                 <div>
-                <div><label for="price">Стоимость груза:</label></div>
-                <input name="price" id="price" placeholder="Введите стоимость">
+                  <div><label for="weight">Вес груза (кг):</label></div>
+                  <input name="weight" id="weight" placeholder="Введите вес">
+                </div>
+                <div class="capacity-wrap">
+                    <span>
+                      <label for="capacity">Объем груза (м3):</label>
+                    </span>
+                    <span>
+                      <button class="capacity-a">Рассчитать</button>
+                    </span>
                 </div>
                 <div>
-                <div><label for="weight">Вес груза (кг):</label></div>
-                <input name="weight" id="weight" placeholder="Введите вес">
+                  <input name="capacity" id="capacity" placeholder="Введите объем">
+                </div>
+                <div class="insurance-clearance-wrap">
+                  <div>
+                    <input type="checkbox" name="insurance">
+                    <span> Страховка</span>
+                  </div>
+                  <div>
+                    <input checked type="checkbox" name="Customs-clearance">
+                    <span> Таможенное оформление</span>
+                  </div>
                 </div>
                 <div>
-                <div>
-                  <span>
-                    <label for="capacity">Объем груза (м3):</label>
-                  </span>
-                  <span>
-                    <a class="capacity-a"
-                      href="www.exp.com">Рассчитать</a>
-                  </span>
-                </div>
-                <div><input name="capacity" id="capacity" placeholder="Введите объем"></div>
-                </div>
-                <div>
-                <div><input type="checkbox" name="insurance"><span> Страховка</span></div>
-                <div><input checked type="checkbox" name="Customs-clearance"><span> Таможенное оформление</span></div>
-                </div>
-                <div>
-                <div><label for="product-code">Код ТН ВЭД:</label></div>
-                <input name="product-code" id="product-code" placeholder="Введите код">
+                  <div><label for="product-code">Код ТН ВЭД:</label></div>
+                  <input name="product-code" id="product-code" placeholder="Введите код">
                 </div>
               </form>
               <form method="post" id="upload-photo-form" enctype="application/x-www-form-urlencoded"
@@ -188,47 +193,49 @@
               <div class="one-panel-btn-wrap">
                 <button class="one-panel-btn">
                   <span>Следующий шаг</span>
-                  <img src="img/btn-arrow-orange.png"
-                    alt="btn-arrow">
-                  </button>
-                </div>
+                  <img src="img/btn-arrow-orange.png" alt="btn-arrow">
+                </button>
+              </div>
             </div>
             <div class="panel" id="two-panel">
               <form method="post" enctype="application/x-www-form-urlencoded" action="www.exmpl.com">
                 <div>
-                <div><label for="custname">Имя:</label></div>
-                <input name="custname" id="custname" required autocomplete="shipping name" placeholder="Ваше имя">
+                  <div><label for="custname">Имя:</label></div>
+                  <input name="custname" id="custname" required autocomplete="shipping name" placeholder="Ваше имя">
                 </div>
                 <div>
-                <div><label for="custtel">Номер телефона:</label></div>
-                <input type=tel name="custtel" id="custtel" autocomplete="shipping tel"
-                  placeholder="+38 (___) ___ - _ - ___">
+                  <div><label for="custtel">Номер телефона:</label></div>
+                  <input type=tel name="custtel" id="custtel" autocomplete="shipping tel"
+                    placeholder="+38 (___) ___ - _ - ___">
                 </div>
                 <div>
-                <div><label for="custemail">Email:</label></div>
-                <input type=email name="custemail" id="custemail" autocomplete="shipping email"
-                  placeholder="Введите e-mail">
+                  <div><label for="custemail">Email:</label></div>
+                  <input type=email name="custemail" id="custemail" autocomplete="shipping email"
+                    placeholder="Введите e-mail">
                 </div>
                 <div>
-                <div><label for="text-form">Комментарий:</label></div>
-                <textarea name="" id="text-form" placeholder="Подробности о товаре, описание, количество"></textarea>
+                  <div class="text-form-label"><label for="text-form">Комментарий:</label></div>
+                  <textarea name="text-form" id="text-form" placeholder="Подробности о товаре, описание, количество"></textarea>
                 </div>
                 <div class="two-panel-btn"><button id="two-panel-btn-prev">Назад</button><button
                     id="two-panel-btn-next">Следующий шаг</button></div>
               </form>
             </div>
             <div class="panel" id="three-panel">
-              <div><img src="img/big-like.png" alt=""></div>
-              <span>Спасибо за заявку!</span>
-              <span>Мы обязатальено свяжемся с вами.</span>
-              <div>
-                <span>Так же для вас может быть полезно:</span>
-                <ul>
-                  <li>Услуги</li>
-                  <li>Примеры грузоперевозок</li>
-                  <li>Поиск товаров в Китае</li>
-                </ul>
+              <div class="three-panel-wrap">
+                <div><img class="three-panel-img" src="img/big-like.png" alt="done-img"></div>
+                <span class="three-panel-span-1">Спасибо за заявку!</span>
+                <p class="three-panel-span-2">Мы обязатальено свяжемся с вами.</p>
+                <div class="three-panel-span-div">
+                  <span>Так же для вас может быть полезно:</span>
+                  <ul>
+                    <li>Услуги</li>
+                    <li>Примеры грузоперевозок</li>
+                    <li>Поиск товаров в Китае</li>
+                  </ul>
+                </div>
               </div>
+              
 
             </div>
           </div>
