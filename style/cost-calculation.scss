@@ -5,7 +5,6 @@
   grid-template-rows: 1fr 4fr;
   justify-items: center;
   align-items: center;
-//   width: 95%;
   .cost-calculation-title {
     grid-column: 1/2;
     grid-row: 1/2;
@@ -32,9 +31,10 @@
   .wrapper-form {
     grid-column: 1/2;
     grid-row: 2/3;
+    width: 95%;
+    max-width: 626px;
     .warpper {
       position: relative;
-      min-width: 100%;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -44,11 +44,11 @@
     .tabs {
       position: absolute;
       margin-top: -30px;
-      left: 10%; 
+      left: 10%;
       min-width: 80%;
       display: flex;
       flex-flow: row nowrap;
-      justify-content: space-between; 
+      justify-content: space-between;
     }
     .tab {
       cursor: pointer;
@@ -69,210 +69,185 @@
     .panels {
       padding: 50px 0 20px;
       background: var(--background-second);
-      width: 100%;
-      min-width: 200px;
-      height: 100%;
       border-radius: 25px;
       overflow: hidden;
       color: var(--white);
-    }
-    .panel {
-      display: none;
-      animation: fadein 0.1s;
-      padding: 0 20px;
-      .form-catalog {
-        .form-catalog__input-price {
-        min-width: 100%;
-        height: 55px;
-        border-radius: 10px;
-        border: none;
-        // padding-left: 25px;
-        margin: 22px 0;
-        background-color: aliceblue;
-        
-        }
+      width: 100%;
+      .panel {
+        display: none;
+        animation: fadein 0.1s;
       }
-      input {
-        display: inline-block;
-      }
-    //   #category,
-    //   #price,
-    //   #weight,
-    //   #capacity,
-    //   #product-code,
-    //   #custname,
-    //   #custtel,
-    //   #custemail {
-    //     min-width: 100%;
-    //     height: 55px;
-    //     border-radius: 10px;
-    //     border: none;
-    //     // padding-left: 25px;
-    //     margin: 22px 0;
-    //   }
-      .insurance-clearance-wrap {
-        margin: 20px 0;
-        display: flex;
-        flex-flow: column nowrap;
-        align-items: flex-start;
-        span {
-          margin-top: 10px;
-        }
-      }
-      .upload-photo-btn {
-        margin: 25px 0;
-        display: block;
-        width: 260px;
-        height: 40px;
-        border: 1px dashed var(--button-grey);
-        border-radius: 10px;
-        background-color: inherit;
-        color: var(--button-grey);
-      }
-      .capacity-wrap {
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-around;
-        align-items: center;
-      }
-      .capacity-a {
-        color: var(--button-prange-dark);
-        background-color: inherit;
-        text-decoration: underline;
-        border: none;
-      }
-      #upload-photo-form {
-        .upload-photo-form-exmpl-reset {
-          display: flex;
-          flex-flow: row nowrap;
-          justify-content: space-evenly;
-          align-items: center;
-        }
-        #reset {
-          color: var(--delete-red);
-          border: none;
-          background-color: inherit;
-          text-decoration: underline;
-        }
-        .upload-photo-wrap {
-          margin: 15px 0;
-          display: flex;
-          flex-flow: row nowrap;
-          justify-content: center;
-          align-items: center;
-          border: 1px dashed var(--button-grey);
-          border-radius: 10px;
-
-          #upload-input-wrap {
-            width: 260px;
-            height: 40px;
+      #one-panel,
+      #two-panel,
+      #three-panel {
+        .inp-parent {
+          width: 90%;
+          margin: 0 auto;
+          label {
+            display: block;
+          }
+          input {
+            width: 100%;
+            height: 50px;
             border-radius: 10px;
-            align-self: center;
-            display: flex;
-            flex-flow: row nowrap;
-            justify-content: center;
-            align-items: center;
-            padding: 6px 12px;
-            cursor: pointer;
-            #upload-input {
-              display: none;
+            padding: 0;
+            border: none;
+            margin: 15px 0;
+          }
+          input::placeholder {
+            padding-left: 30px;
+          }
+        }
+      }
+      .one-panel {
+        .form-catalog__capacity-wrap {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: 1fr 1fr;
+          .capacity-wrap__capacity {
+            grid-column: 1/2;
+            grid-row: 1/2;
+          }
+          .capacity-wrap__btn-wrap {
+            grid-column: 2/3;
+            grid-row: 1/2;
+            justify-self: end;
+            button {
+              color: var(--button-orange);
+              background-color: inherit;
+              border: 0;
+              text-decoration: underline;
             }
           }
+          #capacity {
+            grid-column: 1/3;
+            grid-row: 2/3;
+            margin: 0;
+          }
         }
-      }
-      .text-form-label {
-        margin: 10px 0;
-      }
-      #text-form {
-        width: 97%;
-        height: 100px;
-        border-radius: 10px;
-        border: none;
-      }
-      #text-form::placeholder {
-        padding-left: 20px;
-        padding-top: 10px;
-        font-size: 16px;
-      }
-      .one-panel-btn-wrap {
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: center;
-        align-items: center;
-        .one-panel-btn {
-          width: 260px;
-          height: 60px;
-          border-radius: 90px;
-          background-color: var(--button-orange);
-          border: none;
+        .form-catalog__insurance-clearance__wrap {
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-template-rows: 1fr 1fr;
+          padding: 15px 0;
+          #insurance,
+          #clearance {
+            width: auto;
+            height: auto;
+            margin-right: 15px;
+          }
+          .form-catalog__insurance-clearance__insurance {
+            grid-column: 1/2;
+            grid-row: 1/2;
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+          }
+          .form-catalog__insurance-clearance__clearance {
+            grid-column: 1/2;
+            grid-row: 2/3;
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+          }
+        }
+        .upload-photo-form__exmpl-reset {
+          #reset {
+            width: auto;
+            height: auto;
+            border: 0;
+            background-color: inherit;
+            color: var(--delete-red);
+            text-decoration: underline;
+          }
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: 1fr;
+          align-items: center;
+          .upload-photo-form__exmpl-reset__label {
+            grid-column: 1/2;
+            grid-row: 1/2;
+            justify-self: start;
+          }
+          .upload-photo-form__exmpl-reset__reset {
+            grid-column: 2/3;
+            grid-row: 1/2;
+            justify-self: end;
+          }
+        }
+        .upload-photo-form__input {
+          width: 90%;
+          min-height: 70px;
+          border-radius: 10px;
+          border: 1px dashed var(--button-grey);
           display: flex;
           flex-flow: row nowrap;
           justify-content: center;
           align-items: center;
-          span {
-            padding-right: 20px;
+          cursor: pointer;
+          #upload-input {
+            display: none;
+          }
+        }
+        .one-panel-btn-wrap {
+          display: flex;
+          flex-flow: row nowrap;
+          justify-content: center;
+          align-items: center;
+          margin-top: 15px;
+          .one-panel-btn {
+            background-color: var(--button-orange);
+            width: 100%;
+            max-width: 253px;
+            height: 65px;
+            border-radius: 90px;
+            border: 0;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-around;
+            align-items: center;
           }
         }
       }
-      .two-panel-btn {
-        margin: 25px 0;
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-around;
-        align-items: center;
+      .two-panel {
+        .cust-info__text-form {
+          #text-form {
+            min-width: 99%;
+            min-height: 200px;
+            border-radius: 10px;
+            margin-top: 15px;
+          }
+          #text-form::placeholder {
+            margin-left: 25px;
+          }
+        }
+        .cust-info__two-panel-btn {
+          display: flex;
+          flex-flow: row nowrap;
+          justify-content: space-between;
+          align-items: center;
+          padding-top: 20px;
+          #two-panel-btn-prev {
+            width: 60%;
+            max-width: 138px;
+            height: 50px;
+            border-radius: 90px;
+            margin-left: 25px;
+            border: 0;
+            background-color: var(--button-orange);
+          }
+          #two-panel-btn-next {
+            width: 70%;
+            max-width: 252px;
+            height: 50px;
+            border-radius: 90px;
+            margin-right: 25px;
+            background-color: var(--button-orange);
+          }
+        }
+      }
+    }
 
-        #two-panel-btn-prev {
-          width: 30%;
-          height: 50px;
-          border-radius: 90px;
-          border: 1px solid var(--button-orange);
-          background-color: inherit;
-          margin-right: 10%;
-          color: var(--white);
-        }
-        #two-panel-btn-next {
-          width: 40%;
-          height: 50px;
-          border-radius: 90px;
-          background-color: var(--button-orange);
-          border: none;
-          color: var(--white);
-        }
-      }
-     .three-panel-wrap {
-            margin-left: 10px;
-            display: flex;
-            flex-flow: column nowrap;
-            align-items: flex-start;
-            justify-content: space-around;
-    }
-      .three-panel-img {
-        width: 112px;
-        height: 112px;
-        margin: 20px 0;
-      }
-      .three-panel-span-1 {
-        font-size: 32px;
-        font-weight: 700;
-      }
-      .three-panel-span-2 {
-        font-size: 18px;
-        font-weight: 400;
-        margin: 20px 0;
-      }
-      .three-panel-span-div {
-        margin-top: 25px;
-        font-size: 18px;
-        font-weight: 700;
-        ul {
-            padding-inline-start: 13px;
-        }
-        li {
-            font-size: 18px;
-            font-weight: 300;
-        }
-      }
-    }
     @keyframes fadein {
       from {
         opacity: 0;
@@ -304,19 +279,9 @@
     display: none;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
-  .wrapper-form {
-    min-width: 89%;
-  }
-}
+
 @media screen and (min-width: 768px) {
   .wrapper-form {
-    width: 625px;
     height: 597px;
   }
-//   .panels,
-//   .warpper {
-//     min-width: 100%;
-//     min-height: 100%;
-//   }
 }

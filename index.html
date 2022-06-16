@@ -134,59 +134,59 @@
           </div>
 
           <div class="panels">
-            <div class="panel" id="one-panel">
+            <div class="panel one-panel" id="one-panel">
               <form method="post" class="form-catalog" enctype="application/x-www-form-urlencoded" action="www.exp.com">
-                <div>
-                  <div><label for="category">Категория товара:</label></div>
-                  <input name="category" id="category" placeholder="   Категория товара">
+                <div class="form-catalog__category__wrap inp-parent">
+                  <label for="category">Категория товара:</label>
+                  <input name="category" id="category" placeholder="Категория товара">
                 </div>
-                <div class="form-catalog__input-price">
-                  <div><label for="price">Стоимость груза:</label></div>
+                <div class="form-catalog__input-price__wrap inp-parent">
+                  <label for="price">Стоимость груза:</label>
                   <input name="price" id="price" placeholder="Введите стоимость">
                 </div>
-                <div>
-                  <div><label for="weight">Вес груза (кг):</label></div>
+                <div class="form-catalog__weight__wrap inp-parent">
+                  <label for="weight">Вес груза (кг):</label>
                   <input name="weight" id="weight" placeholder="Введите вес">
                 </div>
-                <div class="capacity-wrap">
-                    <span>
-                      <label for="capacity">Объем груза (м3):</label>
-                    </span>
-                    <span>
-                      <button class="capacity-a">Рассчитать</button>
-                    </span>
-                </div>
-                <div>
+                <div class="form-catalog__capacity-wrap inp-parent">
+                  <p class="capacity-wrap__capacity">
+                    <label for="capacity">Объем груза (м3):</label>
+                  </p>
+                  <p class="capacity-wrap__btn-wrap">
+                    <button class="capacity-wrap__btn">Рассчитать</button>
+                  </p>
                   <input name="capacity" id="capacity" placeholder="Введите объем">
                 </div>
-                <div class="insurance-clearance-wrap">
-                  <div>
-                    <input type="checkbox" name="insurance">
+                <div class="form-catalog__insurance-clearance__wrap inp-parent">
+                  <div class="form-catalog__insurance-clearance__insurance">
+                    <input type="checkbox" id="insurance" name="insurance">
                     <span> Страховка</span>
                   </div>
-                  <div>
-                    <input checked type="checkbox" name="Customs-clearance">
+                  <div class="form-catalog__insurance-clearance__clearance">
+                    <input checked type="checkbox" id="clearance" name="Customs-clearance">
                     <span> Таможенное оформление</span>
                   </div>
                 </div>
-                <div>
-                  <div><label for="product-code">Код ТН ВЭД:</label></div>
+                <div class="form-catalog__product-code__wrap inp-parent">
+                  <label for="product-code">Код ТН ВЭД:</label>
                   <input name="product-code" id="product-code" placeholder="Введите код">
                 </div>
               </form>
-              <form method="post" id="upload-photo-form" enctype="application/x-www-form-urlencoded"
-                action="www.exp.com">
-                <div class="upload-photo-form-exmpl-reset">
-                  <span>
+              <form method="post" class="upload-photo-form" enctype="application/x-www-form-urlencoded" action="www.exp.com">
+                <div class="upload-photo-form__exmpl-reset inp-parent">
+                  <span class="upload-photo-form__exmpl-reset__label">
                     <label for="upload-photo-span">фотография.jpeg</label>
                   </span>
-                  <span>
+                  <span class="upload-photo-form__exmpl-reset__reset">
                     <input type="reset" name="reset" id="reset" onclick="resetImg()" value="Удалить фото">
                   </span>
                 </div>
-                <div class="upload-photo-wrap">
-                  <label id="upload-input-wrap" for="upload-input"><span>Загрузить фото товара</span><input type="file"
-                      id="upload-input" onchange="changeHandler(event)"></label>
+                <div class="upload-photo-form__input inp-parent">
+                  <label id="upload-input-wrap" for="upload-input">
+                    <span>Загрузить фото товара</span>
+                    <input type="file"
+                      id="upload-input" onchange="changeHandler(event)">
+                    </label>
                   <img id="myimage" src="">
                 </div>
               </form>
@@ -197,31 +197,34 @@
                 </button>
               </div>
             </div>
-            <div class="panel" id="two-panel">
-              <form method="post" enctype="application/x-www-form-urlencoded" action="www.exmpl.com">
-                <div>
-                  <div><label for="custname">Имя:</label></div>
+            <div class="panel two-panel" id="two-panel">
+              <form method="post" class="cust-info" id="cust-info" enctype="application/x-www-form-urlencoded" action="www.exmpl.com">
+                <div class="cust-info__custname inp-parent">
+                  <label for="custname">Имя:</label>
                   <input name="custname" id="custname" required autocomplete="shipping name" placeholder="Ваше имя">
                 </div>
-                <div>
-                  <div><label for="custtel">Номер телефона:</label></div>
+                <div class="cust-info__custtel inp-parent">
+                  <label for="custtel">Номер телефона:</label>
                   <input type=tel name="custtel" id="custtel" autocomplete="shipping tel"
                     placeholder="+38 (___) ___ - _ - ___">
                 </div>
-                <div>
-                  <div><label for="custemail">Email:</label></div>
+                <div class="cust-info__custmail inp-parent">
+                  <label for="custemail">Email:</label>
                   <input type=email name="custemail" id="custemail" autocomplete="shipping email"
                     placeholder="Введите e-mail">
                 </div>
-                <div>
-                  <div class="text-form-label"><label for="text-form">Комментарий:</label></div>
-                  <textarea name="text-form" id="text-form" placeholder="Подробности о товаре, описание, количество"></textarea>
+                <div class="cust-info__text-form inp-parent">
+                  <label for="text-form">Комментарий:</label>
+                  <textarea name="text-form" id="text-form">
+                  </textarea>
                 </div>
-                <div class="two-panel-btn"><button id="two-panel-btn-prev">Назад</button><button
-                    id="two-panel-btn-next">Следующий шаг</button></div>
+                <div class="cust-info__two-panel-btn inp-parent">
+                  <button id="two-panel-btn-prev">Назад</button>
+                  <button id="two-panel-btn-next">Следующий шаг</button>
+                </div>
               </form>
             </div>
-            <div class="panel" id="three-panel">
+            <div class="panel three-panel" id="three-panel">
               <div class="three-panel-wrap">
                 <div><img class="three-panel-img" src="img/big-like.png" alt="done-img"></div>
                 <span class="three-panel-span-1">Спасибо за заявку!</span>
@@ -235,7 +238,7 @@
                   </ul>
                 </div>
               </div>
-              
+
 
             </div>
           </div>
