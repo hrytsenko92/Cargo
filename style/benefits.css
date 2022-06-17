@@ -3,9 +3,6 @@
   margin: 0 auto; }
 
 .swiper {
-  height: 700px;
-  width: 96%;
-  max-width: 1820px;
   background-color: transparent;
   position: relative;
   display: flex;
@@ -13,13 +10,13 @@
   align-items: center;
   border-radius: 25px 25px 90px 90px; }
   .swiper .swiper-slide {
-    position: relative; }
+    position: relative;
+    width: 100%;
+    height: 100%; }
     .swiper .swiper-slide .benefits-main-wrap {
       position: absolute;
       top: 15%;
       left: 5%;
-      min-width: 100%;
-      height: 50%;
       z-index: 30;
       display: flex;
       flex-flow: column nowrap;
@@ -56,11 +53,11 @@
           aspect-ratio: 1/1;
           margin-left: 10px; }
     .swiper .swiper-slide .slider_image {
-      width: 100%;
-      height: 700px;
+      min-height: 700px;
+      height: 100%;
       bottom: 20px;
       object-fit: cover;
-      object-position: center; }
+      object-position: top center; }
   .swiper .swiper-horizontal > .swiper-pagination-bullets,
   .swiper .swiper-pagination-bullets.swiper-pagination-horizontal,
   .swiper .swiper-pagination-custom,
