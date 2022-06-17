@@ -1,24 +1,25 @@
 .benefits {
-  max-width: 95%;
+  max-width: 1920px;
+  // width: 100%;
   margin: 0 auto;
 }
 .swiper {
-  height: 675px;
-  width: 100%;
+  height: 700px;
+  width: 96%;
+  max-width: 1820px;
   background-color: transparent;
   position: relative;
   display: flex;
   justify-items: center;
-  border-radius: 40px;
   align-items: center;
-  filter: drop-shadow(5px 15px 40px rgba(11, 24, 97, 0.32));
+  border-radius: 25px 25px 90px 90px;
   .swiper-slide {
     position: relative;
     .benefits-main-wrap {
       position: absolute;
       top: 15%;
       left: 5%;
-      width: 90%;
+      min-width: 100%;
       height: 50%;
       z-index: 30;
       display: flex;
@@ -62,8 +63,10 @@
     }
     .slider_image {
       width: 100%;
-      height: 100%;
-      background-position: center;
+      height: 700px;
+      bottom: 20px;
+      object-fit: cover;
+      object-position: center;
     }
   }
   .swiper-horizontal > .swiper-pagination-bullets,
@@ -71,6 +74,7 @@
   .swiper-pagination-custom,
   .swiper-pagination-fraction {
     bottom: 50px;
+    top: 580px;
   }
   .swiper-pagination-bullet {
     width: 10px;
@@ -91,7 +95,7 @@
     color: var(--white);
   }
 }
-@media screen and (min-width: 1140px) {
+@media screen and (min-width: 1024px) {
   .swiper .swiper-slide .benefits-main-wrap {
     left: 19%;
     top: 25;
@@ -105,12 +109,10 @@
     }
   }
 }
-@media screen and (max-width: 1140px) {
-  .benefits {
-    max-width: 100%;
-  }
+@media screen and (max-width: 1024px) {
   .swiper {
     border-radius: 0;
+    width: 100%;
   }
   .swiper-button-next:after,
   .swiper-rtl .swiper-button-prev:after {
