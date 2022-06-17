@@ -60,7 +60,7 @@
         margin: 0 auto; }
     .cost-calculation .wrapper-form .panels {
       padding: 50px 0 25px;
-      background: var(--background-second);
+      background-color: var(--background-second);
       border-radius: 25px;
       overflow: hidden;
       color: var(--white);
@@ -165,6 +165,10 @@
         align-items: center;
         cursor: pointer; }
         .cost-calculation .wrapper-form .panels .one-panel .upload-photo-form__input #upload-input {
+          display: none;
+          max-width: 50px;
+          max-height: 50px; }
+        .cost-calculation .wrapper-form .panels .one-panel .upload-photo-form__input #myimage {
           display: none; }
       .cost-calculation .wrapper-form .panels .one-panel .one-panel-btn-wrap {
         display: flex;
@@ -223,7 +227,7 @@
         display: flex;
         flex-flow: column nowrap;
         justify-content: space-around;
-        align-items: start;
+        align-items: center;
         gap: 15px; }
         .cost-calculation .wrapper-form .panels .three-panel .three-panel-wrap .three-panel-img {
           width: 112px;
@@ -234,6 +238,8 @@
         .cost-calculation .wrapper-form .panels .three-panel .three-panel-wrap .three-panel-span-2 {
           font-size: 18px;
           font-weight: 400; }
+        .cost-calculation .wrapper-form .panels .three-panel .three-panel-wrap .three-panel-span-div {
+          text-align: center; }
         .cost-calculation .wrapper-form .panels .three-panel .three-panel-wrap span {
           font-size: 20px;
           font-weight: 700; }
@@ -337,11 +343,12 @@
       margin: 0 auto;
       display: grid;
       grid-template-columns: 1fr;
-      grid-template-rows: 1fr 0.3fr 0.3fr 1fr; }
+      grid-template-rows: 1fr 0.3fr 0.3fr 1fr;
+      justify-items: center;
+      align-items: center; }
       .wrapper-form .warpper .panels .three-panel .three-panel-wrap .three-panel-img {
         grid-column: 1/2;
-        grid-row: 1/2;
-        align-self: flex-end; }
+        grid-row: 1/2; }
       .wrapper-form .warpper .panels .three-panel .three-panel-wrap .three-panel-span-1 {
         grid-column: 1/2;
         grid-row: 2/3; }

@@ -123,17 +123,17 @@
       </div>
       <div class="wrapper-form">
         <div class="warpper">
-          <input class="radio" id="one" name="group" type="radio" checked>
-          <input class="radio" id="two" name="group" type="radio">
-          <input class="radio" id="three" name="group" type="radio">
+          <input class="radio" id="one" name="group" type="radio" checked disabled>
+          <input class="radio" id="two" name="group" type="radio" disabled>
+          <input class="radio" id="three" name="group" type="radio" disabled>
 
-          <div class="tabs">
+          <div class="tabs" id="tabs">
             <label class="tab" id="one-tab" for="one"><span>1</span></label>
             <label class="tab" id="two-tab" for="two"><span>2</span></label>
             <label class="tab" id="three-tab" for="three"><span>3</span></label>
           </div>
 
-          <div class="panels">
+          <div class="panels" id="panels">
             <div class="panel one-panel" id="one-panel">
               <form method="post" class="form-catalog" enctype="application/x-www-form-urlencoded" action="www.exp.com">
                 <div class="form-catalog__category__wrap inp-parent">
@@ -187,11 +187,11 @@
                     <input type="file"
                       id="upload-input" onchange="changeHandler(event)">
                     </label>
-                  <img id="myimage" src="">
+                  <img id="myimage" src="/img/check-mark.png">
                 </div>
               </form>
               <div class="one-panel-btn-wrap">
-                <button class="one-panel-btn">
+                <button class="one-panel-btn" onclick="tab01()">
                   <span>Следующий шаг</span>
                   <img src="img/btn-arrow-orange.png" alt="btn-arrow">
                 </button>
@@ -219,8 +219,8 @@
                   </textarea>
                 </div>
                 <div class="cust-info__two-panel-btn inp-parent">
-                  <button id="two-panel-btn-prev">Назад</button>
-                  <button id="two-panel-btn-next">Следующий шаг</button>
+                  <button id="two-panel-btn-prev" onclick="tab02()">Назад</button>
+                  <button id="two-panel-btn-next" onclick="tab03()">Следующий шаг</button>
                 </div>
               </form>
             </div>

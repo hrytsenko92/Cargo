@@ -68,7 +68,7 @@
     }
     .panels {
       padding: 50px 0 25px;
-      background: var(--background-second);
+      background-color: var(--background-second);
       border-radius: 25px;
       overflow: hidden;
       color: var(--white);
@@ -189,6 +189,11 @@
           cursor: pointer;
           #upload-input {
             display: none;
+            max-width: 50px;
+            max-height: 50px;
+          }
+          #myimage {
+            display: none;
           }
         }
         .one-panel-btn-wrap {
@@ -261,11 +266,13 @@
           display: flex;
           flex-flow: column nowrap;
           justify-content: space-around;
-          align-items: start;
+          align-items: center;
           gap: 15px;
           .three-panel-img {
             width: 112px;
             height: 112px;
+            // margin-left: 18%;
+            // margin-bottom: 10%;
           }
           .three-panel-span-1 {
             font-size: 32px;
@@ -274,6 +281,9 @@
           .three-panel-span-2 {
             font-size: 18px;
             font-weight: 400;
+          }
+          .three-panel-span-div {
+            text-align: center;
           }
           span {
             font-size: 20px;
@@ -306,6 +316,7 @@
     #two:checked ~ .panels #two-panel,
     #three:checked ~ .panels #three-panel {
       display: block;
+      
     }
     #one:checked ~ .tabs #one-tab,
     #two:checked ~ .tabs #two-tab,
@@ -424,10 +435,12 @@
             display: grid;
             grid-template-columns: 1fr;
             grid-template-rows: 1fr 0.3fr 0.3fr 1fr;
+            justify-items: center;
+            align-items: center;
             .three-panel-img {
               grid-column: 1/2;
               grid-row: 1/2;
-              align-self: flex-end;
+              // align-self: flex-end;
             }
             .three-panel-span-1 {
               grid-column: 1/2;
