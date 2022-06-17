@@ -2,6 +2,8 @@ function resetImg (){
     let myResetImg = document.getElementById("myimage");
         myResetImg.src = "";
         document.getElementById("upload-input-wrap").style.display = "block";
+        document.getElementById("myimage").style.display = "none";
+        document.getElementsByClassName("upload-photo-form__input")[0].style.border = "1px dashed var(--button-grey)";
 }
 
 function tab01 (){

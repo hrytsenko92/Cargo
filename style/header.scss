@@ -1,92 +1,78 @@
+/* z-index = 75; */
 .header{
   position: relative;
-  max-width: 1140px;
+  max-width: 1208px;
+  width: 100%;
   margin: 0 auto;
-  height: 100px;
 }
 .nav {
-  width: 100%;
+  box-sizing: content-box;
+  max-width: 1140px;
   height: 65px;
   line-height: 65px;
   text-align: center;
-}
-
-.nav div.logo {
-  float: left;
-  width: auto;
-  height: auto;
-  padding-top: 0.5rem;
-}
-
-.nav div.main_list {
-  height: 65px;
-  float: right;
-}
-
-.nav div.main_list ul {
-  width: 100%;
-  height: 65px;
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-.orange-btn {
-  width: 295px;
-  height: 68px;
-  background-color: var(--button-orange);
-  border-radius: 90px;
-  border: none;
-  padding-right: 0;
-  color: var(--white);
-  font-size: 18px;
-}
-
-.nav div.main_list ul li {
-  width: auto;
-  height: 65px;
-  padding: 0;
-
-  font-weight: 400;
-}
-
-.nav div.main_list ul li a {
-  text-decoration: none;
-  color: #fff;
-  line-height: 23px;
-  font-size: 16px;
-  font-weight: 400;
-  padding-right: 25px;
-}
-
-.nav div.main_list ul li a:hover {
-  color: #00e676;
-}
-
-.navTrigger {
-  display: none;
-}
-
-.nav {
+  margin: 0 34px 0 34px; 
   padding-top: 20px;
   padding-bottom: 20px;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
+.nav div.logo {
+  float: left;
+  img {
+    margin-top: 8px;
+  }
+}
+.nav div.main_list {
+  float: right;
+  width: 80%;
+}
+.nav div.main_list .navlinks {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  gap: 10px;
+  list-style: none;
+  margin: 0;
+  padding-inline-start: 0px;
+  li a {
+    text-decoration: none;
+    color: #fff;
+    line-height: 23.3px;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .orange-btn {
+    width: 171px;
+    height: 50px;
+    background-color: var(--button-orange);
+    border-radius: 90px;
+    border: none;
+    color: var(--white);
+    font-size: 15px;
+    font-weight: 600;
+  }
+}
+.navTrigger {
+  display: none;
+}
 
-
-@media screen and (max-width: 1140px) {
-  .nav {
-    position: fixed;
-    z-index: 50;
+@media screen and (max-width: 1025px) {
+  header.header {
+    nav.nav {
+      position: fixed;
+      z-index: 75;
+      width: 100%;
+      margin: 0;
+      div.logo {
+        margin-left: 15px;
+        padding-left: 30px;
+      }
+    }
   }
   .navTrigger {
     display: block;
-    
-  }
-  .nav div.logo {
-    margin-left: 15px;
-    padding-left: 30px;
   }
   .nav div.main_list {
     width: 100%;
@@ -97,10 +83,10 @@
     height: auto;
     display: none;
   }
-  .nav div.main_list ul {
-    flex-direction: column;
+  .nav div.main_list .navlinks {
+    display: flex;
+    flex-flow: column nowrap;
     width: 100%;
-    height: 100vh;
     right: 0;
     left: 0;
     bottom: 0;
@@ -110,7 +96,6 @@
   .nav div.main_list ul li {
     width: 100%;
     text-align: center;
-    padding: 17px 0;
   }
   .nav div.main_list ul li a {
     text-align: center;
@@ -316,7 +301,7 @@
 
 .affix {
   padding: 0;
-  background-color: #111;
+  background-color: var(--background);
 }
 
 .myH2 {
