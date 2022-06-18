@@ -186,8 +186,11 @@
           border: 0;
           display: flex;
           flex-flow: row nowrap;
-          justify-content: space-around;
-          align-items: center; }
+          justify-content: center;
+          align-items: center;
+          color: var(--white); }
+          .cost-calculation .wrapper-form .panels .one-panel .one-panel-btn-wrap .one-panel-btn img {
+            margin-left: 15px; }
       .cost-calculation .wrapper-form .panels .two-panel .cust-info__text-form #text-form {
         min-width: 99%;
         height: 147px;
@@ -228,7 +231,7 @@
         flex-flow: column nowrap;
         justify-content: space-around;
         align-items: center;
-        gap: 15px; }
+        gap: 10px; }
         .cost-calculation .wrapper-form .panels .three-panel .three-panel-wrap .three-panel-img {
           width: 112px;
           height: 112px; }
@@ -243,6 +246,8 @@
         .cost-calculation .wrapper-form .panels .three-panel .three-panel-wrap span {
           font-size: 20px;
           font-weight: 700; }
+        .cost-calculation .wrapper-form .panels .three-panel .three-panel-wrap ul {
+          text-align: start; }
         .cost-calculation .wrapper-form .panels .three-panel .three-panel-wrap ul > li {
           font-size: 18px;
           font-weight: 300; }
@@ -343,7 +348,7 @@
       margin: 0 auto;
       display: grid;
       grid-template-columns: 1fr;
-      grid-template-rows: 1fr 0.3fr 0.3fr 1fr;
+      grid-template-rows: 0.6fr 0.3fr 0.3fr 1fr;
       justify-items: center;
       align-items: center; }
       .wrapper-form .warpper .panels .three-panel .three-panel-wrap .three-panel-img {

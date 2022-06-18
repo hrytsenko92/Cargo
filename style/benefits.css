@@ -1,6 +1,7 @@
 .benefits {
   max-width: 1920px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  filter: drop-shadow(5px 15px 40px rgba(11, 24, 97, 0.32)); }
 
 .swiper {
   width: 96%;

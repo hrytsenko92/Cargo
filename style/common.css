@@ -3,10 +3,12 @@
 @import url("header.css");
 @import url("benefits.css");
 @import url("cost-calculation.css");
+@import url("why-us.css");
 
 :root {
   --background: #282b38;
   --background-second: #363a4d;
+  --circle-border: #6C7188;
   --button-orange: #e58d35;
   --button-prange-dark: #b26519;
   --button-grey: #bfbfbf;

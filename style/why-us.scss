@@ -1,0 +1,96 @@
+@media screen and (min-width: 375px) {
+  section.why-us {
+    position: relative;
+    max-width: 1820px;
+    margin: 0 auto;
+    div.why-us__wrapper {
+      box-sizing: content-box;
+      padding: 0 34px;
+      max-width: 1820px;
+      min-height: 479px;
+      height: 100%;
+      margin: 0 auto;
+      background-color: var(--background-second);
+      overflow: hidden;
+      border-radius: 20px;
+      .swiper-pagination {
+        bottom: 65px;
+        .swiper-pagination-bullet {
+          width: 8px;
+          height: 8px;
+        }
+      }
+      .why-us__title {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        height: 190px;
+        .why-us__title__h3 {
+            font-size: 24px;
+            font-weight: 700;
+          text-align: center;
+          margin: 20px 0;
+          color: var(--white);
+        }
+        .why-us__title__div-hl {
+          width: 85px;
+          height: 2px;
+          background-color: var(--button-orange);
+          margin: 20px 0;
+        }
+      }
+      .why-us__slider {
+        overflow: hidden;
+      }
+      .swiper-slide-active {
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+      }
+    }
+  }
+  .thy-us-slide-wrap {
+    display: grid;
+    grid-template-columns: 265px;
+    grid-template-rows: 120px 60px;
+    justify-items: center;
+    align-items: center;
+    .out-circle {
+      grid-column: 1/2;
+      grid-row: 1/2;
+      display: flex;
+      flex-flow: row;
+      justify-content: center;
+      align-items: center;
+      width: 113px;
+      height: 113px;
+      border-radius: 90px;
+      border: 1px solid var(--circle-border);
+      .ins-circle {
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+        align-items: center;
+        width: 93px;
+        height: 93px;
+        border-radius: 90px;
+        background-color: var(--tab-bgc);
+        img {
+          width: 50px;
+          height: 50px;
+        }
+      }
+    }
+    .item-title {
+      grid-column: 1/2;
+      grid-row: 2/3;
+      text-align: center;
+      font-size: 18px;
+      font-weight: 400;
+      color: var(--white);
+    }
+  }
+}

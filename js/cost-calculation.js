@@ -23,12 +23,8 @@ function tab03 (){
     document.getElementById("three").checked = true;
     document.getElementById("tabs").style.display = "none"; 
     document.getElementById("three-panel").style.backgroundColor= "#282b38";
-    // document.getElementById("panels").style.padding = "0px 0px 0px 0px";
     document.getElementById("panels").style.backgroundColor= "#282b38";
 }
-
-
-
 
 // func changeHandler show uploadet photo. work, just turn off;
 
@@ -52,8 +48,6 @@ function tab03 (){
 
 //     fileReader.readAsDataURL(file); 
 // }  
-
-
 
 function changeHandler(evt) {
         document.getElementById("myimage").style.display = "block";
