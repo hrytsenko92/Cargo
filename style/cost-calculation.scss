@@ -90,12 +90,13 @@
             width: 100%;
             height: 50px;
             border-radius: 10px;
-            padding: 0;
             border: none;
             margin: 15px 0;
+            text-align: center;
           }
           input::placeholder {
-            padding-left: 30px;
+            // margin-left: -50px;
+            opacity: 0.7;
           }
         }
       }
@@ -329,7 +330,6 @@
     display: none;
   }
 }
-
 @media screen and (min-width: 768px) {
   .wrapper-form {
     .warpper {
@@ -460,13 +460,14 @@
     }
   }
 }
-@media screen and (min-width: 1140px) {
+@media screen and (min-width: 1208px) {
   .cost-calculation {
+    box-sizing: content-box;
     position: relative;
     max-width: 1140px;
-    width: 100%;
     height: 956px;
     margin: 0 auto;
+    padding: 0 34px;
     display: grid;
     grid-template-columns: 626px auto;
     grid-template-rows: auto auto;
@@ -484,10 +485,9 @@
       display: block;
       position: absolute;
       bottom: 0px;
-      right: -50px;
+      left: -13%;
       width: 626px;
       height: 917px;
-
     }
   }
 }

@@ -83,13 +83,13 @@
           width: 100%;
           height: 50px;
           border-radius: 10px;
-          padding: 0;
           border: none;
-          margin: 15px 0; }
+          margin: 15px 0;
+          text-align: center; }
         .cost-calculation .wrapper-form .panels #one-panel .inp-parent input::placeholder,
         .cost-calculation .wrapper-form .panels #two-panel .inp-parent input::placeholder,
         .cost-calculation .wrapper-form .panels #three-panel .inp-parent input::placeholder {
-          padding-left: 30px; }
+          opacity: 0.7; }
       .cost-calculation .wrapper-form .panels .one-panel .form-catalog__capacity-wrap {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -358,13 +358,14 @@
       .wrapper-form .warpper .panels .three-panel .three-panel-wrap .three-panel-span-div {
         grid-column: 1/2;
         grid-row: 4/5; } }
-@media screen and (min-width: 1140px) {
+@media screen and (min-width: 1208px) {
   .cost-calculation {
+    box-sizing: content-box;
     position: relative;
     max-width: 1140px;
-    width: 100%;
     height: 956px;
     margin: 0 auto;
+    padding: 0 34px;
     display: grid;
     grid-template-columns: 626px auto;
     grid-template-rows: auto auto; }
@@ -381,7 +382,7 @@
       display: block;
       position: absolute;
       bottom: 0px;
-      right: -50px;
+      left: -13%;
       width: 626px;
       height: 917px; } }
 
