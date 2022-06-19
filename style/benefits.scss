@@ -1,77 +1,74 @@
-.benefits {
+section.benefits {
   max-width: 1920px;
   margin: 0 auto;
-  filter: drop-shadow(5px 15px 40px rgba(11, 24, 97, 0.32));
-}
-.swiper-wrapper {
-  // width: 95%;
-}
-.swiper {
-  width: 96%;
-  background-color: transparent;
-  position: relative;
-  display: flex;
-  justify-items: center;
-  align-items: center;
-  border-radius: 35px 35px 90px 90px;
-  .swiper-slide {
-    position: relative;
+  .swiper {
     width: 100%;
-    height: 100%;
-    .benefits-main-wrap {
-      position: absolute;
-      top: 15%;
-      // left: 5%;
-      min-width: 100%;
-      height: 50%;
-      z-index: 30;
-      display: flex;
-      flex-flow: column nowrap;
-      justify-content: space-around;
-      align-items: center;
-      text-align: center;
-      .benefits__h2 {
-        font-size: 32px;
-        font-weight: 700;
-        color: var(--white);
-      }
-      .benefits__p {
-        font-size: 16px;
-        font-weight: 300;
-        color: var(--white);
-      }
-      .benefits__btn {
-        width: 295px;
-        height: 68px;
-        border-radius: 33px;
-        border: none;
-        background-color: var(--button-orange);
-        color: var(--white);
-        font-size: 16px;
-        font-weight: 600;
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: center;
-        align-items: center;
-        text-decoration: none;
-        .btn-arrow {
-          width: 25px;
-          height: 25px;
+    background-color: transparent;
+    position: relative;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    .swiper-wrapper {
+      .swiper-slide {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        .benefits-main-wrap {
+          position: absolute;
+          top: 15%;
+          min-width: 100%;
+          height: 50%;
+          z-index: 30;
+          display: flex;
+          flex-flow: column nowrap;
+          justify-content: center;
+          align-items: flex-start;
+          .benefits__h2 {
+            font-size: 32px;
+            font-weight: 700;
+            color: var(--white);
+          }
+          .benefits__p {
+            font-size: 16px;
+            font-weight: 300;
+            color: var(--white);
+          }
+          .benefits__btn {
+            width: 295px;
+            height: 68px;
+            border-radius: 33px;
+            border: none;
+            background-color: var(--button-orange);
+            color: var(--white);
+            font-size: 16px;
+            font-weight: 600;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            .btn-arrow {
+              width: 25px;
+              height: 25px;
+              object-fit: cover;
+              object-position: center;
+              aspect-ratio: 1/1;
+              margin-left: 10px;
+            }
+          }
+        }
+        .slider_image {
+          min-height: 700px;
+          height: 100%;
+          bottom: 20px;
           object-fit: cover;
-          object-position: center;
-          aspect-ratio: 1/1;
-          margin-left: 10px;
+          object-position: top center;
         }
       }
     }
-    .slider_image {
-      min-height: 700px;
-      height: 100%;
-      bottom: 20px;
-      object-fit: cover;
-      object-position: top center;
-    }
   }
+}
+.swiper {
   .swiper-horizontal > .swiper-pagination-bullets,
   .swiper-pagination-bullets.swiper-pagination-horizontal,
   .swiper-pagination-custom,
@@ -88,7 +85,6 @@
     background-color: var(--white);
     opacity: 0.7;
   }
-
   .swiper-button-next:after,
   .swiper-rtl .swiper-button-prev:after {
     position: absolute;
@@ -103,6 +99,7 @@
   }
 }
 @media screen and (min-width: 1024px) {
+ 
   .swiper .swiper-slide .benefits-main-wrap {
     left: 19%;
     top: 25;
@@ -117,6 +114,23 @@
   }
 }
 @media screen and (max-width: 1024px) {
+  section.benefits {
+    .swiper {
+      .swiper-wrapper {
+        .swiper-slide {
+          div.benefits-main-wrap {
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: space-around;
+            align-items: center;
+          }
+
+        }
+      }
+    }
+  }
+  
+  
   .swiper {
     border-radius: 0;
     width: 100%;
