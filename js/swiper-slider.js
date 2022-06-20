@@ -32,3 +32,17 @@ const swiper2 = new Swiper('.swiper2', {
     clickable: true,
   },
 });
+
+
+const swiper3 = new Swiper('.swiper3', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+  lazy: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+});
