@@ -8,12 +8,12 @@
 .nav {
   box-sizing: content-box;
   max-width: 1140px;
-  height: 65px;
+  height: 64px;
   line-height: 65px;
   text-align: center;
   margin: 0 34px 0 34px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 18px;
+  padding-bottom: 18px;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
@@ -66,7 +66,7 @@
       margin: 0;
       div.logo {
         margin-left: 15px;
-        padding-left: 30px;
+        padding-left: 5px;
       }
     }
   }
@@ -113,7 +113,7 @@
   height: 25px;
   margin: auto;
   position: absolute;
-  right: 50px;
+  right: 20px;
   top: 0;
   bottom: 0;
 }
@@ -277,7 +277,7 @@
   }
 }
 .affix {
-  padding: 0;
+  padding: 4px 0;
   background-color: var(--background);
 }
 .myH2 {

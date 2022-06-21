@@ -2,20 +2,22 @@
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 3fr;
+  grid-template-rows: 0.5fr 3fr;
   justify-items: center;
-  align-items: center; }
+  align-items: center;
+  padding: 0 20px; }
   .cost-calculation .cost-calculation-title {
     grid-column: 1/2;
     grid-row: 1/2;
-    margin: 50px 0; }
+    margin: 0 0 50px; }
     .cost-calculation .cost-calculation-title .title {
       width: 70%;
       margin: 0 auto;
       text-align: center; }
       .cost-calculation .cost-calculation-title .title .title-span {
-        font-size: 36px;
+        font-size: 24px;
         font-weight: 700;
+        line-height: 29px;
         display: block;
         color: var(--white); }
       .cost-calculation .cost-calculation-title .title .title-line {
@@ -27,8 +29,9 @@
   .cost-calculation .wrapper-form {
     grid-column: 1/2;
     grid-row: 2/3;
-    width: 95%;
-    max-width: 626px; }
+    width: 100%;
+    max-width: 626px;
+    margin: 0 auto; }
     .cost-calculation .wrapper-form .warpper {
       position: relative;
       display: flex;
@@ -71,7 +74,7 @@
       .cost-calculation .wrapper-form .panels #one-panel .inp-parent,
       .cost-calculation .wrapper-form .panels #two-panel .inp-parent,
       .cost-calculation .wrapper-form .panels #three-panel .inp-parent {
-        width: 90%;
+        padding: 0 30px;
         margin: 0 auto; }
         .cost-calculation .wrapper-form .panels #one-panel .inp-parent label,
         .cost-calculation .wrapper-form .panels #two-panel .inp-parent label,
@@ -134,42 +137,43 @@
           display: flex;
           flex-flow: row nowrap;
           align-items: center; }
-      .cost-calculation .wrapper-form .panels .one-panel .upload-photo-form__exmpl-reset {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;
-        align-items: center; }
-        .cost-calculation .wrapper-form .panels .one-panel .upload-photo-form__exmpl-reset #reset {
-          width: auto;
-          height: auto;
-          border: 0;
-          background-color: inherit;
-          color: var(--delete-red);
-          text-decoration: underline; }
-        .cost-calculation .wrapper-form .panels .one-panel .upload-photo-form__exmpl-reset .upload-photo-form__exmpl-reset__label {
-          grid-column: 1/2;
-          grid-row: 1/2;
-          justify-self: start; }
-        .cost-calculation .wrapper-form .panels .one-panel .upload-photo-form__exmpl-reset .upload-photo-form__exmpl-reset__reset {
-          grid-column: 2/3;
-          grid-row: 1/2;
-          justify-self: end; }
-      .cost-calculation .wrapper-form .panels .one-panel .upload-photo-form__input {
-        width: 90%;
-        min-height: 40px;
-        border-radius: 10px;
-        border: 1px dashed var(--button-grey);
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: center;
-        align-items: center;
-        cursor: pointer; }
-        .cost-calculation .wrapper-form .panels .one-panel .upload-photo-form__input #upload-input {
-          display: none;
-          max-width: 50px;
-          max-height: 50px; }
-        .cost-calculation .wrapper-form .panels .one-panel .upload-photo-form__input #myimage {
-          display: none; }
+      .cost-calculation .wrapper-form .panels .one-panel .upload-photo-form {
+        padding: 0 30px; }
+        .cost-calculation .wrapper-form .panels .one-panel .upload-photo-form .upload-photo-form__exmpl-reset {
+          padding: 10px 0;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: 1fr;
+          align-items: center;
+          justify-content: space-between; }
+          .cost-calculation .wrapper-form .panels .one-panel .upload-photo-form .upload-photo-form__exmpl-reset #reset {
+            border: 0;
+            background-color: inherit;
+            color: var(--delete-red);
+            text-decoration: underline; }
+          .cost-calculation .wrapper-form .panels .one-panel .upload-photo-form .upload-photo-form__exmpl-reset .upload-photo-form__exmpl-reset__label {
+            grid-column: 1/2;
+            grid-row: 1/2;
+            justify-self: start; }
+          .cost-calculation .wrapper-form .panels .one-panel .upload-photo-form .upload-photo-form__exmpl-reset .upload-photo-form__exmpl-reset__reset {
+            grid-column: 2/3;
+            grid-row: 1/2;
+            justify-self: end; }
+        .cost-calculation .wrapper-form .panels .one-panel .upload-photo-form .upload-photo-form__input {
+          min-height: 40px;
+          border-radius: 10px;
+          border: 1px dashed var(--button-grey);
+          display: flex;
+          flex-flow: row nowrap;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer; }
+          .cost-calculation .wrapper-form .panels .one-panel .upload-photo-form .upload-photo-form__input #upload-input {
+            display: none;
+            max-width: 50px;
+            max-height: 50px; }
+          .cost-calculation .wrapper-form .panels .one-panel .upload-photo-form .upload-photo-form__input #myimage {
+            display: none; }
       .cost-calculation .wrapper-form .panels .one-panel .one-panel-btn-wrap {
         display: flex;
         flex-flow: row nowrap;
