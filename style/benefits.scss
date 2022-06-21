@@ -1,25 +1,25 @@
 section.benefits {
   max-width: 1920px;
+  width: 100%;
   margin: 0 auto;
   .benefits-wrapper {
-    position: relative;
     .swiper {
       width: 100%;
-      background-color: transparent;
       .swiper-wrapper {
         .swiper-slide {
+          position: relative;
           .swiper-lazy {
             width: 100%;
-            height: 750px;
+            height: 730px;
             background-size: cover;
-            background-position: center;
-            margin: 0 auto;
+            background-position: center center;
           }
           .benefits-main-wrap {
             position: absolute;
             top: 25%;
-            width: 25%;
-            height: 25%;
+            left: 12%;
+            max-width: 35%;
+            max-height: 45%;
             z-index: 30;
             display: grid;
             grid-template-columns: 1fr;
@@ -32,7 +32,6 @@ section.benefits {
               font-weight: 700;
               line-height: 70px;
               color: var(--white);
-              width: 100%;
               margin: 0;
             }
             .benefits__p {
@@ -42,11 +41,12 @@ section.benefits {
               font-weight: 300;
               line-height: 27px;
               color: var(--white);
+              margin: 10px 0;
             }
             .benefits__btn {
               grid-column: 1/2;
               grid-row: 3/4;
-              width: 293px;
+              max-width: 293px;
               height: 68px;
               border-radius: 33px;
               border: none;
@@ -65,20 +65,20 @@ section.benefits {
                 height: 25px;
                 object-fit: cover;
                 aspect-ratio: 1/1;
+                margin-left: 5px;
               }
             }
           }
         }
       }
     }
-    /* pagination and buttons */
     .swiper {
       .swiper-horizontal > .swiper-pagination-bullets,
       .swiper-pagination-bullets.swiper-pagination-horizontal,
       .swiper-pagination-custom,
       .swiper-pagination-fraction {
-        bottom: 50px;
-        top: 580px;
+        bottom: 40px;
+        top: 630px;
       }
       .swiper-pagination-bullet {
         width: 7px;
@@ -105,33 +105,20 @@ section.benefits {
   }
 }
 
-@media screen and (min-width: 1024px) {
-  .swiper .swiper-slide .benefits-main-wrap {
-    left: 19%;
-    top: 25;
-    width: 70%;
-    text-align: start;
-    align-items: start;
-    justify-content: center;
-    gap: 1rem;
-    .benefits__h2 {
-      width: 50%;
-    }
-  }
-}
 @media screen and (max-width: 1024px) {
   section.benefits {
-    .swiper {
-      .swiper-wrapper {
-        .swiper-slide {
-          div.benefits-main-wrap {
-            display: flex;
-            flex-flow: column nowrap;
-            justify-content: space-around;
-            align-items: center;
-            text-align: center;
-          }
-        }
+    padding-top: 72px;
+    .benefits-wrapper .swiper .swiper-wrapper .swiper-slide {
+      .benefits-main-wrap {
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        max-width: 295px;
+        max-height: 50%;
+        justify-items: center;
+        text-align: center;
       }
     }
   }
