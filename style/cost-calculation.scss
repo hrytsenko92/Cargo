@@ -84,15 +84,13 @@
       #two-panel,
       #three-panel {
         .inp-parent {
-          // width: 100%; // 2
           padding: 0 30px;
           margin: 0 auto;
           label {
             display: block;
           }
           input {
-            width: 100%; // 1 
-            // min-width: 275px;
+            width: 100%; 
             height: 50px;
             border-radius: 10px;
             border: none;
@@ -136,7 +134,6 @@
           display: grid;
           grid-template-columns: 1fr;
           grid-template-rows: 1fr 1fr;
-          padding: 15px 0;
           #insurance,
           #clearance {
             width: auto;
@@ -343,131 +340,180 @@
   }
 }
 @media screen and (min-width: 768px) {
-  .wrapper-form {
-    .warpper {
-      .panels {
-        height: 597px;
-        padding: 0;
-        #one-panel,
-        #two-panel,
-        #three-panel {
-          .inp-parent {
-            // width: 90%;
-            margin: 0 auto;
-            input {
-              max-width: 248px;
+  section.cost-calculation {
+    .wrapper-form {
+      .tabs {
+        position: absolute;
+        margin-top: -30px;
+        left: 10%;
+        min-width: 40%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+      }
+      .warpper {
+        .panels {
+          height: 597px;
+          #one-panel,
+          #two-panel,
+          #three-panel {
+            .inp-parent {
               width: 100%;
-              height: 56px;
-              border-radius: 10px;
               padding: 0;
-              border: none;
-              margin: 15px 0;
+              margin: 0;
+              input {
+                max-width: 248px;
+                height: 56px;
+                border-radius: 10px;
+                border: none;
+              }
             }
           }
-        }
-        .one-panel {
-          width: 90%;
-          margin: 0 auto;
-          .form-catalog {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1.2fr 0.2fr 0.3fr;
-            align-items: end;
-            justify-content: center;
-            form.form-catalog__category__wrap {
-              grid-column: 1/2;
-              grid-row: 1/2;
-            }
-            form.form-catalog__input-price__wrap {
-              grid-column: 2/3;
-              grid-row: 1/2;
-            }
-            .form-catalog__capacity-wrap {
-              p {
-                label {
-                  font-size: 15px;
-                  font-weight: 600;
+          .one-panel {
+            margin: 0 auto;
+            max-height: 597px;
+            .form-catalog {
+              padding: 0 50px;
+              display: grid;
+              grid-template-columns: 1fr 1fr;
+              grid-template-rows: 1fr 0.2fr 0.3fr;
+              align-items: end;
+              justify-content: space-between;
+              form.form-catalog__category__wrap {
+                grid-column: 1/2;
+                grid-row: 1/2;
+              }
+              form.form-catalog__input-price__wrap {
+                grid-column: 2/3;
+                grid-row: 1/2;
+              }
+              .form-catalog__weight__wrap {
+                grid-column: 1/2;
+                grid-row: 2/3;
+              }
+              .form-catalog__capacity-wrap {
+                grid-column: 2/3;
+                grid-row: 2/3;
+                grid-template-rows: 0.5fr 1fr;
+                input#capacity {
+                  margin: 15px 0;
                 }
               }
-            }
-          }
-          .one-panel-btn-wrap {
-            margin-bottom: 0;
-          }
-        }
-        .two-panel {
-          width: 90%;
-          margin: 0 auto;
-          max-height: 597px;
-          .cust-info {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 0.9fr 0.4fr 1fr 0.4fr;
-            align-items: end; 
-            justify-items: center;
-            .cust-info__custname {
-              grid-column: 1/3;
-              grid-row: 1/2;
-            }
-            input#custname {
-              max-width: 526px;
-              width: 100%;
-            }
-            .cust-info__custtel {
-              grid-column: 1/2;
-              grid-row: 2/3;
-              #custtel {
-                margin-left: 14px;
+              .form-catalog__insurance-clearance__wrap {
+                grid-column: 1/2;
+                grid-row: 3/4; 
+                input#insurance,
+                input#clearance {
+                  width: 13px;
+                  height: 13px;
+                  margin-right: 15px;
+                } 
+              }
+              .form-catalog__product-code__wrap {
+                grid-column: 2/3;
+                grid-row: 3/4;
               }
             }
-            .cust-info__custmail {
-              grid-column: 2/3;
-              grid-row: 2/3;
-              #custemail {
-                margin-left: -13px;
-              }
+            .upload-photo-form {
+              margin-top: 15px;
+              padding: 0 50px;
             }
-            .cust-info__text-form {
-              grid-column: 1/3;
-              grid-row: 3/4;
-            }
-            .cust-info__two-panel-btn {
-              grid-column: 1/3;
-              grid-row: 4/5;
+            .one-panel-btn-wrap {
+              padding: 0 50px;
+              justify-content: start;
 
             }
           }
-        }
-        .three-panel {
-          .three-panel-wrap {
-            width: 90%;
+          .two-panel {
             margin: 0 auto;
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: 0.6fr 0.3fr 0.3fr 1fr;
-            justify-items: center;
-            align-items: center;
-            .three-panel-img {
-              grid-column: 1/2;
-              grid-row: 1/2;
+            padding: 0 50px;
+            .cust-info {
+              display: grid;
+              grid-template-columns: 1fr 1fr;
+              grid-template-rows: 0.7fr 0.7fr 0.8fr 0.6fr;
+              align-items: end; 
+              justify-items: center;
+              .cust-info__custname {
+                grid-column: 1/3;
+                grid-row: 1/2;
+              }
+              input#custname {
+                max-width: 526px;
+                width: 100%;
+                padding: 0;
+              }
+              .cust-info__custtel {
+                grid-column: 1/2;
+                grid-row: 2/3;
+                input#custtel {
+                  max-width: 248px;
+                }
+              }
+              .cust-info__custmail {
+                grid-column: 2/3;
+                grid-row: 2/3;
+                label {
+                  margin-left: 11px;
+                }
+                input#custemail {
+                  max-width: 248px;
+                  margin-left: 11px;
+                }
+              }
+              .cust-info__text-form {
+                grid-column: 1/3;
+                grid-row: 3/4;
+                #text-form {
+                  height: 147px;
+                }
+              }
+              .cust-info__two-panel-btn {
+                grid-column: 1/3;
+                grid-row: 4/5;
+  
+              }
             }
-            .three-panel-span-1 {
-              grid-column: 1/2;
-              grid-row: 2/3;
-            }
-            .three-panel-span-2 {
-              grid-column: 1/2;
-              grid-row: 3/4;
-            }
-            .three-panel-span-div {
-              grid-column: 1/2;
-              grid-row: 4/5;
+          }
+          .three-panel {
+            .three-panel-wrap {
+              width: 90%;
+              height: 70%;
+              margin: 0 auto;
+              display: grid;
+              grid-template-columns: 1fr;
+              grid-template-rows: 0.6fr 0.3fr 0.3fr 0.5fr 0.5fr;
+              .three-panel-img {
+                grid-column: 1/2;
+                grid-row: 1/2;
+              }
+              .three-panel-span-1 {
+                grid-column: 1/2;
+                grid-row: 2/3;
+              }
+              .three-panel-span-2 {
+                grid-column: 1/2;
+                grid-row: 3/4;
+              }
+              .three-panel-span-div {
+                grid-column: 1/2;
+                grid-row: 4/5;
+                justify-self: start;
+                span {
+                  text-align: start;
+                }
+              }
+              ul {
+                grid-column: 1/2;
+                grid-row: 5/6;
+                padding-inline-start: 20px;
+              }
             }
           }
         }
       }
     }
   }
+  
 }
 @media screen and (min-width: 1208px) {
   .cost-calculation {

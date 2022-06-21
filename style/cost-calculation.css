@@ -118,8 +118,7 @@
       .cost-calculation .wrapper-form .panels .one-panel .form-catalog__insurance-clearance__wrap {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-        padding: 15px 0; }
+        grid-template-rows: 1fr 1fr; }
         .cost-calculation .wrapper-form .panels .one-panel .form-catalog__insurance-clearance__wrap #insurance,
         .cost-calculation .wrapper-form .panels .one-panel .form-catalog__insurance-clearance__wrap #clearance {
           width: auto;
@@ -278,95 +277,134 @@
     display: none; }
 
 @media screen and (min-width: 768px) {
-  .wrapper-form .warpper .panels {
-    height: 597px;
-    padding: 0; }
-    .wrapper-form .warpper .panels #one-panel .inp-parent,
-    .wrapper-form .warpper .panels #two-panel .inp-parent,
-    .wrapper-form .warpper .panels #three-panel .inp-parent {
-      margin: 0 auto; }
-      .wrapper-form .warpper .panels #one-panel .inp-parent input,
-      .wrapper-form .warpper .panels #two-panel .inp-parent input,
-      .wrapper-form .warpper .panels #three-panel .inp-parent input {
+  section.cost-calculation .wrapper-form .tabs {
+    position: absolute;
+    margin-top: -30px;
+    left: 10%;
+    min-width: 40%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between; }
+  section.cost-calculation .wrapper-form .warpper .panels {
+    height: 597px; }
+    section.cost-calculation .wrapper-form .warpper .panels #one-panel .inp-parent,
+    section.cost-calculation .wrapper-form .warpper .panels #two-panel .inp-parent,
+    section.cost-calculation .wrapper-form .warpper .panels #three-panel .inp-parent {
+      width: 100%;
+      padding: 0;
+      margin: 0; }
+      section.cost-calculation .wrapper-form .warpper .panels #one-panel .inp-parent input,
+      section.cost-calculation .wrapper-form .warpper .panels #two-panel .inp-parent input,
+      section.cost-calculation .wrapper-form .warpper .panels #three-panel .inp-parent input {
         max-width: 248px;
-        width: 100%;
         height: 56px;
         border-radius: 10px;
-        padding: 0;
-        border: none;
-        margin: 15px 0; }
-    .wrapper-form .warpper .panels .one-panel {
-      width: 90%;
-      margin: 0 auto; }
-      .wrapper-form .warpper .panels .one-panel .form-catalog {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1.2fr 0.2fr 0.3fr;
-        align-items: end;
-        justify-content: center; }
-        .wrapper-form .warpper .panels .one-panel .form-catalog form.form-catalog__category__wrap {
-          grid-column: 1/2;
-          grid-row: 1/2; }
-        .wrapper-form .warpper .panels .one-panel .form-catalog form.form-catalog__input-price__wrap {
-          grid-column: 2/3;
-          grid-row: 1/2; }
-        .wrapper-form .warpper .panels .one-panel .form-catalog .form-catalog__capacity-wrap p label {
-          font-size: 15px;
-          font-weight: 600; }
-      .wrapper-form .warpper .panels .one-panel .one-panel-btn-wrap {
-        margin-bottom: 0; }
-    .wrapper-form .warpper .panels .two-panel {
-      width: 90%;
+        border: none; }
+    section.cost-calculation .wrapper-form .warpper .panels .one-panel {
       margin: 0 auto;
       max-height: 597px; }
-      .wrapper-form .warpper .panels .two-panel .cust-info {
+      section.cost-calculation .wrapper-form .warpper .panels .one-panel .form-catalog {
+        padding: 0 50px;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 0.9fr 0.4fr 1fr 0.4fr;
+        grid-template-rows: 1fr 0.2fr 0.3fr;
         align-items: end;
-        justify-items: center; }
-        .wrapper-form .warpper .panels .two-panel .cust-info .cust-info__custname {
-          grid-column: 1/3;
+        justify-content: space-between; }
+        section.cost-calculation .wrapper-form .warpper .panels .one-panel .form-catalog form.form-catalog__category__wrap {
+          grid-column: 1/2;
           grid-row: 1/2; }
-        .wrapper-form .warpper .panels .two-panel .cust-info input#custname {
-          max-width: 526px;
-          width: 100%; }
-        .wrapper-form .warpper .panels .two-panel .cust-info .cust-info__custtel {
+        section.cost-calculation .wrapper-form .warpper .panels .one-panel .form-catalog form.form-catalog__input-price__wrap {
+          grid-column: 2/3;
+          grid-row: 1/2; }
+        section.cost-calculation .wrapper-form .warpper .panels .one-panel .form-catalog .form-catalog__weight__wrap {
           grid-column: 1/2;
           grid-row: 2/3; }
-          .wrapper-form .warpper .panels .two-panel .cust-info .cust-info__custtel #custtel {
-            margin-left: 14px; }
-        .wrapper-form .warpper .panels .two-panel .cust-info .cust-info__custmail {
+        section.cost-calculation .wrapper-form .warpper .panels .one-panel .form-catalog .form-catalog__capacity-wrap {
+          grid-column: 2/3;
+          grid-row: 2/3;
+          grid-template-rows: 0.5fr 1fr; }
+          section.cost-calculation .wrapper-form .warpper .panels .one-panel .form-catalog .form-catalog__capacity-wrap input#capacity {
+            margin: 15px 0; }
+        section.cost-calculation .wrapper-form .warpper .panels .one-panel .form-catalog .form-catalog__insurance-clearance__wrap {
+          grid-column: 1/2;
+          grid-row: 3/4; }
+          section.cost-calculation .wrapper-form .warpper .panels .one-panel .form-catalog .form-catalog__insurance-clearance__wrap input#insurance,
+          section.cost-calculation .wrapper-form .warpper .panels .one-panel .form-catalog .form-catalog__insurance-clearance__wrap input#clearance {
+            width: 13px;
+            height: 13px;
+            margin-right: 15px; }
+        section.cost-calculation .wrapper-form .warpper .panels .one-panel .form-catalog .form-catalog__product-code__wrap {
+          grid-column: 2/3;
+          grid-row: 3/4; }
+      section.cost-calculation .wrapper-form .warpper .panels .one-panel .upload-photo-form {
+        margin-top: 15px;
+        padding: 0 50px; }
+      section.cost-calculation .wrapper-form .warpper .panels .one-panel .one-panel-btn-wrap {
+        padding: 0 50px;
+        justify-content: start; }
+    section.cost-calculation .wrapper-form .warpper .panels .two-panel {
+      margin: 0 auto;
+      padding: 0 50px; }
+      section.cost-calculation .wrapper-form .warpper .panels .two-panel .cust-info {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.7fr 0.7fr 0.8fr 0.6fr;
+        align-items: end;
+        justify-items: center; }
+        section.cost-calculation .wrapper-form .warpper .panels .two-panel .cust-info .cust-info__custname {
+          grid-column: 1/3;
+          grid-row: 1/2; }
+        section.cost-calculation .wrapper-form .warpper .panels .two-panel .cust-info input#custname {
+          max-width: 526px;
+          width: 100%;
+          padding: 0; }
+        section.cost-calculation .wrapper-form .warpper .panels .two-panel .cust-info .cust-info__custtel {
+          grid-column: 1/2;
+          grid-row: 2/3; }
+          section.cost-calculation .wrapper-form .warpper .panels .two-panel .cust-info .cust-info__custtel input#custtel {
+            max-width: 248px; }
+        section.cost-calculation .wrapper-form .warpper .panels .two-panel .cust-info .cust-info__custmail {
           grid-column: 2/3;
           grid-row: 2/3; }
-          .wrapper-form .warpper .panels .two-panel .cust-info .cust-info__custmail #custemail {
-            margin-left: -13px; }
-        .wrapper-form .warpper .panels .two-panel .cust-info .cust-info__text-form {
+          section.cost-calculation .wrapper-form .warpper .panels .two-panel .cust-info .cust-info__custmail label {
+            margin-left: 11px; }
+          section.cost-calculation .wrapper-form .warpper .panels .two-panel .cust-info .cust-info__custmail input#custemail {
+            max-width: 248px;
+            margin-left: 11px; }
+        section.cost-calculation .wrapper-form .warpper .panels .two-panel .cust-info .cust-info__text-form {
           grid-column: 1/3;
           grid-row: 3/4; }
-        .wrapper-form .warpper .panels .two-panel .cust-info .cust-info__two-panel-btn {
+          section.cost-calculation .wrapper-form .warpper .panels .two-panel .cust-info .cust-info__text-form #text-form {
+            height: 147px; }
+        section.cost-calculation .wrapper-form .warpper .panels .two-panel .cust-info .cust-info__two-panel-btn {
           grid-column: 1/3;
           grid-row: 4/5; }
-    .wrapper-form .warpper .panels .three-panel .three-panel-wrap {
+    section.cost-calculation .wrapper-form .warpper .panels .three-panel .three-panel-wrap {
       width: 90%;
+      height: 70%;
       margin: 0 auto;
       display: grid;
       grid-template-columns: 1fr;
-      grid-template-rows: 0.6fr 0.3fr 0.3fr 1fr;
-      justify-items: center;
-      align-items: center; }
-      .wrapper-form .warpper .panels .three-panel .three-panel-wrap .three-panel-img {
+      grid-template-rows: 0.6fr 0.3fr 0.3fr 0.5fr 0.5fr; }
+      section.cost-calculation .wrapper-form .warpper .panels .three-panel .three-panel-wrap .three-panel-img {
         grid-column: 1/2;
         grid-row: 1/2; }
-      .wrapper-form .warpper .panels .three-panel .three-panel-wrap .three-panel-span-1 {
+      section.cost-calculation .wrapper-form .warpper .panels .three-panel .three-panel-wrap .three-panel-span-1 {
         grid-column: 1/2;
         grid-row: 2/3; }
-      .wrapper-form .warpper .panels .three-panel .three-panel-wrap .three-panel-span-2 {
+      section.cost-calculation .wrapper-form .warpper .panels .three-panel .three-panel-wrap .three-panel-span-2 {
         grid-column: 1/2;
         grid-row: 3/4; }
-      .wrapper-form .warpper .panels .three-panel .three-panel-wrap .three-panel-span-div {
+      section.cost-calculation .wrapper-form .warpper .panels .three-panel .three-panel-wrap .three-panel-span-div {
         grid-column: 1/2;
-        grid-row: 4/5; } }
+        grid-row: 4/5;
+        justify-self: start; }
+        section.cost-calculation .wrapper-form .warpper .panels .three-panel .three-panel-wrap .three-panel-span-div span {
+          text-align: start; }
+      section.cost-calculation .wrapper-form .warpper .panels .three-panel .three-panel-wrap ul {
+        grid-column: 1/2;
+        grid-row: 5/6;
+        padding-inline-start: 20px; } }
 @media screen and (min-width: 1208px) {
   .cost-calculation {
     box-sizing: content-box;
