@@ -380,6 +380,7 @@
               grid-template-rows: 1fr 0.2fr 0.3fr;
               align-items: end;
               justify-content: space-between;
+              gap: 0 20px;
               form.form-catalog__category__wrap {
                 grid-column: 1/2;
                 grid-row: 1/2;

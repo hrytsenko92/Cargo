@@ -1,8 +1,7 @@
 @media screen and (min-width: 375px) {
-  section.why-us {
+  .why-us {
     box-sizing: content-box;
     position: relative;
-    margin-top: 25px;
     .why-us__wrapper {
       width: 100%;
       height: 479px;
@@ -106,10 +105,11 @@
 }
 
 @media screen and (min-width: 768px) {
-  section.why-us {
+  .why-us {
     max-width: 1920px;
     padding-left: 50px;
     padding-right: 50px;
+margin: 0 auto;
     .why-us__wrapper {
       min-width: 100%;
       height: 100%;
@@ -117,17 +117,15 @@
       border-radius: 20px;
       display: grid;
       grid-template-columns: 1fr;
-      grid-template-rows: 0.5fr 2fr;
+      grid-template-rows: 0.4fr 2fr;
       justify-content: center;
       align-items: center;
       .why-us__slider {
         display: none;
       }
       .why-us__container-grid {
-        // max-width: 1208px;
+        max-width: 1140px;
         width: 100%;
-        // max-height: 725px;
-        // height: 100%;
         margin: 0 auto;
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -136,6 +134,7 @@
         justify-items: center;
         align-items: center;
         gap: 25px;
+        padding-bottom: 45px;
         .why-us__slide__1 {
           grid-column: 1/2;
           grid-row: 1/2;
@@ -172,6 +171,56 @@
     }
   }
 }
+
+@media screen and (max-width: 1208px) {
+  section.why-us {
+    margin-top: 25px;
+  }
+  }
+
+  @media screen and (min-width: 1208px) {
+    section.why-us {
+      .why-us__wrapper {
+        .why-us__container-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+          grid-template-rows: 1fr 1fr 1fr;
+          .why-us__slide__1 {
+            grid-column: 1/2;
+            grid-row: 1/2;
+          }
+          .why-us__slide__2 {
+            grid-column: 2/3;
+            grid-row: 1/2;
+          }
+          .why-us__slide__3 {
+            grid-column: 3/4;
+            grid-row: 1/2;
+          }
+          .why-us__slide__4 {
+            grid-column: 1/2;
+            grid-row: 2/3;
+          }
+          .why-us__slide__5 {
+            grid-column: 2/3;
+            grid-row: 2/3;
+          }
+          .why-us__slide__6 {
+            grid-column: 3/4;
+            grid-row: 2/3;
+          }
+          .why-us__slide__7 {
+            grid-column: 1/2;
+            grid-row: 3/4;
+          }
+          .why-us__slide__8 {
+            grid-column: 2/3;
+            grid-row: 3/4;
+          }
+        }
+      }
+    }
+  }
+
 @media screen and (min-width: 1400px) {
   section.why-us {
     .why-us__wrapper {

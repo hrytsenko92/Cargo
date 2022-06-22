@@ -1,16 +1,13 @@
 const swiper = new Swiper('.swiper', {
-  // Optional parameters
   direction: 'horizontal',
   loop: true,
   lazy: true,
 
-  // If we need pagination
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
   },
 
-  // Navigation arrows
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
@@ -21,12 +18,10 @@ const swiper = new Swiper('.swiper', {
 
 
 const swiper2 = new Swiper('.swiper2', {
-  // Optional parameters
   direction: 'horizontal',
   loop: true,
   lazy: true,
 
-  // If we need pagination
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
@@ -35,14 +30,36 @@ const swiper2 = new Swiper('.swiper2', {
 
 
 const swiper3 = new Swiper('.swiper3', {
-  // Optional parameters
   direction: 'horizontal',
   loop: true,
   lazy: true,
 
-  // If we need pagination
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
+  },
+});
+
+const swiper4 = new Swiper('.swiper4', {
+  slidesPerView: 2,
+  spaceBetween: 1,
+  loop: true,
+  lazy: true,
+  freeMode: true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+
+const swiper5 = new Swiper('.swiper5', {
+  slidesPerView: 3,
+  spaceBetween: 1,
+  loop: true,
+  lazy: true,
+  freeMode: true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
   },
 });

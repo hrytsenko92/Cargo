@@ -310,7 +310,8 @@
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 0.2fr 0.3fr;
         align-items: end;
-        justify-content: space-between; }
+        justify-content: space-between;
+        gap: 0 20px; }
         section.cost-calculation .wrapper-form .warpper .panels .one-panel .form-catalog form.form-catalog__category__wrap {
           grid-column: 1/2;
           grid-row: 1/2; }
