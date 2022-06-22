@@ -112,6 +112,8 @@
               width: 138px;
               height: 50px;
               border-radius: 90px;
+              font-size: 15px;
+              font-weight: 300;
               border: 1px solid var(--button-orange);
               background-color: var(--background-second);
               color: var(--white); }
@@ -160,10 +162,14 @@
             width: 360px; }
           .transportation .transportation-wrapper .transportation__slider-desktop-medium .swiper-wrapper .transportation-slide-wrap .tr-slide-btm .tr-slide-btns .tr-slide-btn-orange {
             width: 153px;
-            height: 50px; }
+            height: 50px;
+            font-size: 15px;
+            font-weight: 600; }
           .transportation .transportation-wrapper .transportation__slider-desktop-medium .swiper-wrapper .transportation-slide-wrap .tr-slide-btm .tr-slide-btns .tr-slide-btn-blue {
             width: 153px;
-            height: 50px; }
+            height: 50px;
+            font-size: 15px;
+            font-weight: 600; }
       .transportation .transportation-wrapper .transportation__slider-desktop-medium .swiper-button-prev,
       .transportation .transportation-wrapper .transportation__slider-desktop-medium .swiper-rtl .swiper-button-next {
         left: 100px;

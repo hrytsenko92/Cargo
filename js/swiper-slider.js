@@ -63,3 +63,14 @@ const swiper5 = new Swiper('.swiper5', {
     prevEl: '.swiper-button-prev',
   },
 });
+
+const swiper6 = new Swiper('.swiper6', {
+  direction: 'horizontal',
+  loop: true,
+  lazy: true,
+
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+});
