@@ -88,6 +88,7 @@
           border-radius: 10px;
           border: none;
           margin: 15px 0;
+          padding: 0px 0px;
           text-align: center; }
         .cost-calculation .wrapper-form .panels #one-panel .inp-parent input::placeholder,
         .cost-calculation .wrapper-form .panels #two-panel .inp-parent input::placeholder,

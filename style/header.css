@@ -1,9 +1,14 @@
 /* z-index = 75; */
 .header {
-  position: relative;
+  position: absolute;
+  top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
   max-width: 1208px;
   width: 100%;
-  margin: 0 auto; }
+  z-index: 75; }
 
 .nav {
   box-sizing: content-box;
