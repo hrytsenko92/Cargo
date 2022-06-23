@@ -14,9 +14,6 @@ const swiper = new Swiper('.swiper', {
   },
 });
 
-
-
-
 const swiper2 = new Swiper('.swiper2', {
   direction: 'horizontal',
   loop: true,
@@ -27,7 +24,6 @@ const swiper2 = new Swiper('.swiper2', {
     clickable: true,
   },
 });
-
 
 const swiper3 = new Swiper('.swiper3', {
   direction: 'horizontal',
@@ -72,5 +68,31 @@ const swiper6 = new Swiper('.swiper6', {
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
+  },
+});
+
+const swiper7 = new Swiper('.swiper7', {
+  direction: 'horizontal',
+  slidesPerView: 2,
+  spaceBetween: 1,
+  loop: true,
+  lazy: true,
+  freeMode: true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+
+const swiper8 = new Swiper('.swiper8', {
+  direction: 'horizontal',
+  slidesPerView: 3,
+  spaceBetween: 1,
+  loop: true,
+  lazy: true,
+  freeMode: true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
   },
 });

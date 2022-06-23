@@ -2,7 +2,7 @@
   .transportation {
     box-sizing: content-box;
     position: relative;
-    padding: 0 50px 50px;
+    padding: 0 50px 100px;
     margin: 0 auto; }
     .transportation .transportation-wrapper {
       width: 100%;
@@ -12,13 +12,15 @@
       border-radius: 20px;
       overflow: hidden; }
       .transportation .transportation-wrapper .swiper-pagination {
-        bottom: 15px; }
+        bottom: 35px; }
         .transportation .transportation-wrapper .swiper-pagination .swiper-pagination-bullet {
           width: 8px;
           height: 8px;
           border: 2px solid var(--button-grey); }
         .transportation .transportation-wrapper .swiper-pagination .swiper-pagination-bullet-active {
           background-color: var(--white); }
+      .transportation .transportation-wrapper .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .transportation .transportation-wrapper .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+        margin: 0 13px; }
       .transportation .transportation-wrapper .transportation__slider {
         overflow: hidden; }
       .transportation .transportation-wrapper .swiper-slide-active {
@@ -145,31 +147,29 @@
       display: none; }
     .transportation .transportation-wrapper .transportation__slider-desktop-medium {
       display: block; }
-      .transportation .transportation-wrapper .transportation__slider-desktop-medium .swiper-wrapper {
-        position: relative; }
-        .transportation .transportation-wrapper .transportation__slider-desktop-medium .swiper-wrapper .swiper-slide-active {
-          display: flex;
-          flex-flow: row nowrap;
-          justify-content: center;
-          overflow: hidden; }
-        .transportation .transportation-wrapper .transportation__slider-desktop-medium .swiper-wrapper .swiper-slide-next {
-          display: flex;
-          flex-flow: row nowrap;
-          justify-content: center; }
-        .transportation .transportation-wrapper .transportation__slider-desktop-medium .swiper-wrapper .transportation-slide-wrap {
+      .transportation .transportation-wrapper .transportation__slider-desktop-medium .swiper-wrapper .swiper-slide-active {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        overflow: hidden; }
+      .transportation .transportation-wrapper .transportation__slider-desktop-medium .swiper-wrapper .swiper-slide-next {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center; }
+      .transportation .transportation-wrapper .transportation__slider-desktop-medium .swiper-wrapper .transportation-slide-wrap {
+        width: 360px; }
+        .transportation .transportation-wrapper .transportation__slider-desktop-medium .swiper-wrapper .transportation-slide-wrap .tr-slide-top img {
           width: 360px; }
-          .transportation .transportation-wrapper .transportation__slider-desktop-medium .swiper-wrapper .transportation-slide-wrap .tr-slide-top img {
-            width: 360px; }
-          .transportation .transportation-wrapper .transportation__slider-desktop-medium .swiper-wrapper .transportation-slide-wrap .tr-slide-btm .tr-slide-btns .tr-slide-btn-orange {
-            width: 153px;
-            height: 50px;
-            font-size: 15px;
-            font-weight: 600; }
-          .transportation .transportation-wrapper .transportation__slider-desktop-medium .swiper-wrapper .transportation-slide-wrap .tr-slide-btm .tr-slide-btns .tr-slide-btn-blue {
-            width: 153px;
-            height: 50px;
-            font-size: 15px;
-            font-weight: 600; }
+        .transportation .transportation-wrapper .transportation__slider-desktop-medium .swiper-wrapper .transportation-slide-wrap .tr-slide-btm .tr-slide-btns .tr-slide-btn-orange {
+          width: 153px;
+          height: 50px;
+          font-size: 15px;
+          font-weight: 600; }
+        .transportation .transportation-wrapper .transportation__slider-desktop-medium .swiper-wrapper .transportation-slide-wrap .tr-slide-btm .tr-slide-btns .tr-slide-btn-blue {
+          width: 153px;
+          height: 50px;
+          font-size: 15px;
+          font-weight: 600; }
       .transportation .transportation-wrapper .transportation__slider-desktop-medium .swiper-button-prev,
       .transportation .transportation-wrapper .transportation__slider-desktop-medium .swiper-rtl .swiper-button-next {
         left: 100px;
