@@ -2,7 +2,7 @@
   .transportation {
     box-sizing: content-box;
     position: relative;
-    padding: 0 50px 100px;
+    padding: 0 20px 100px;
     margin: 0 auto;
     .transportation-wrapper {
       width: 100%;
@@ -178,7 +178,6 @@
       .transportation__slider-desktop-medium {
         display: block;
         .swiper-wrapper {
-          // position: relative;
           .swiper-slide-active {
             display: flex;
             flex-flow: row nowrap;

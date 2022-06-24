@@ -112,42 +112,54 @@
       height: 794px;
       min-height: 100%;
       border-radius: 20px; }
+      .services .services__wrapper .swiper-wrapper .swiper-slide .servives-slide-wrap {
+        max-width: 360px;
+        width: 100%; }
       .services .services__wrapper .swiper-pagination {
         bottom: 50px; }
-      .services .services__wrapper .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .services .services__wrapper .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+      .services .services__wrapper .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+      .services .services__wrapper .swiper-pagination-horizontal.swiper-pagination-bullets
+      .swiper-pagination-bullet {
         margin: 0 13px; } }
 @media screen and (min-width: 1024px) {
-  .services .services__wrapper {
-    max-width: 768px; }
-    .services .services__wrapper .services__slider-mobile, .services .services__wrapper .services__slider-desktop-large {
-      display: none; }
-    .services .services__wrapper .services__slider-desktop-medium {
-      display: block; }
-      .services .services__wrapper .services__slider-desktop-medium .swiper-wrapper .swiper-slide-active {
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: center;
-        overflow: hidden; }
-      .services .services__wrapper .services__slider-desktop-medium .swiper-wrapper .swiper-slide-next {
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: center; }
-      .services .services__wrapper .services__slider-desktop-medium .swiper-wrapper .swiper-slide .servives-slide-wrap {
-        max-width: 360px; }
-      .services .services__wrapper .services__slider-desktop-medium .swiper-button-prev,
-      .services .services__wrapper .services__slider-desktop-medium .swiper-rtl .swiper-button-next {
-        left: 100px;
-        right: auto;
-        color: var(--button-grey); }
-      .services .services__wrapper .services__slider-desktop-medium .swiper-button-next,
-      .services .services__wrapper .services__slider-desktop-medium .swiper-rtl .swiper-button-prev {
-        right: 100px;
-        left: auto;
-        color: var(--button-grey); } }
+  .services {
+    padding: 0 50px;
+    border-radius: 20px;
+    margin-left: 50px;
+    margin-right: 50px; }
+    .services .services__wrapper {
+      max-width: 768px; }
+      .services .services__wrapper .services__slider-mobile,
+      .services .services__wrapper .services__slider-desktop-large {
+        display: none; }
+      .services .services__wrapper .services__slider-desktop-medium {
+        display: block; }
+        .services .services__wrapper .services__slider-desktop-medium .swiper-wrapper .swiper-slide-active {
+          display: flex;
+          flex-flow: row nowrap;
+          justify-content: center;
+          overflow: hidden; }
+        .services .services__wrapper .services__slider-desktop-medium .swiper-wrapper .swiper-slide-next {
+          display: flex;
+          flex-flow: row nowrap;
+          justify-content: center; }
+        .services .services__wrapper .services__slider-desktop-medium .swiper-wrapper .swiper-slide .servives-slide-wrap {
+          max-width: 360px; }
+        .services .services__wrapper .services__slider-desktop-medium .swiper-button-prev,
+        .services .services__wrapper .services__slider-desktop-medium .swiper-rtl .swiper-button-next {
+          left: 5%;
+          right: auto;
+          color: var(--button-grey); }
+        .services .services__wrapper .services__slider-desktop-medium .swiper-button-next,
+        .services .services__wrapper .services__slider-desktop-medium .swiper-rtl .swiper-button-prev {
+          right: 5%;
+          left: auto;
+          color: var(--button-grey); } }
 @media screen and (min-width: 1400px) {
   .services .services__wrapper {
     max-width: 1140px; }
-    .services .services__wrapper .services__slider-mobile, .services .services__wrapper .services__slider-desktop-medium {
+    .services .services__wrapper .services__slider-mobile,
+    .services .services__wrapper .services__slider-desktop-medium {
       display: none; }
     .services .services__wrapper .services__slider-desktop-large {
       display: block; }
@@ -161,12 +173,12 @@
         justify-content: center; }
       .services .services__wrapper .services__slider-desktop-large .swiper-button-next,
       .services .services__wrapper .services__slider-desktop-large .swiper-rtl .swiper-button-prev {
-        right: 100px;
+        right: 40px;
         left: auto;
         color: var(--button-grey); }
       .services .services__wrapper .services__slider-desktop-large .swiper-button-prev,
       .services .services__wrapper .services__slider-desktop-large .swiper-rtl .swiper-button-next {
-        left: 100px;
+        left: 40px;
         right: auto;
         color: var(--button-grey); } }
 

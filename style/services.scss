@@ -10,7 +10,6 @@
       min-height: 482px;
       height: 100%;
       margin: 0 auto;
-      // border-radius: 20px;
       overflow: hidden;
       .swiper-pagination {
         bottom: 15px;
@@ -117,22 +116,42 @@
         }
         .servives-slide_1 {
           .servives-slide-wrap {
-            background: linear-gradient(0deg, rgba(4, 5, 17, 0.91) 0%, rgba(88, 88, 88, 0) 100%), url("../img/services-slide-1.png");
+            background: linear-gradient(
+                0deg,
+                rgba(4, 5, 17, 0.91) 0%,
+                rgba(88, 88, 88, 0) 100%
+              ),
+              url("../img/services-slide-1.png");
           }
         }
         .servives-slide_2 {
           .servives-slide-wrap {
-            background: linear-gradient(0deg, rgba(4, 5, 17, 0.91) 0%, rgba(88, 88, 88, 0) 100%), url("../img/services-slide-2.png");
+            background: linear-gradient(
+                0deg,
+                rgba(4, 5, 17, 0.91) 0%,
+                rgba(88, 88, 88, 0) 100%
+              ),
+              url("../img/services-slide-2.png");
           }
         }
         .servives-slide_3 {
           .servives-slide-wrap {
-            background: linear-gradient(0deg, rgba(4, 5, 17, 0.91) 0%, rgba(88, 88, 88, 0) 100%), url("../img/services-slide-3.png");
+            background: linear-gradient(
+                0deg,
+                rgba(4, 5, 17, 0.91) 0%,
+                rgba(88, 88, 88, 0) 100%
+              ),
+              url("../img/services-slide-3.png");
           }
         }
         .servives-slide_4 {
           .servives-slide-wrap {
-            background: linear-gradient(0deg, rgba(4, 5, 17, 0.91) 0%, rgba(88, 88, 88, 0) 100%), url("../img/services-slide-4.png");
+            background: linear-gradient(
+                0deg,
+                rgba(4, 5, 17, 0.91) 0%,
+                rgba(88, 88, 88, 0) 100%
+              ),
+              url("../img/services-slide-4.png");
           }
         }
       }
@@ -143,18 +162,26 @@
 @media screen and (min-width: 768px) {
   .services {
     padding: 0 50px 0px;
-    // background-color: inherit;
     background-color: var(--background-second);
     .services__wrapper {
       width: 100%;
       height: 794px;
       min-height: 100%;
-      // background-color: var(--background-second);
       border-radius: 20px;
+      .swiper-wrapper {
+        .swiper-slide {
+          .servives-slide-wrap {
+            max-width: 360px;
+            width: 100%;
+          }
+        }
+      }
       .swiper-pagination {
         bottom: 50px;
       }
-      .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+      .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+      .swiper-pagination-horizontal.swiper-pagination-bullets
+        .swiper-pagination-bullet {
         margin: 0 13px;
       }
     }
@@ -163,9 +190,14 @@
 
 @media screen and (min-width: 1024px) {
   .services {
+    padding: 0 50px;
+    border-radius: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
     .services__wrapper {
-      max-width: 768px;  
-      .services__slider-mobile, .services__slider-desktop-large {
+      max-width: 768px;
+      .services__slider-mobile,
+      .services__slider-desktop-large {
         display: none;
       }
       .services__slider-desktop-medium {
@@ -190,13 +222,13 @@
         }
         .swiper-button-prev,
         .swiper-rtl .swiper-button-next {
-          left: 100px;
+          left: 5%;
           right: auto;
           color: var(--button-grey);
         }
         .swiper-button-next,
         .swiper-rtl .swiper-button-prev {
-          right: 100px;
+          right: 5%;
           left: auto;
           color: var(--button-grey);
         }
@@ -209,7 +241,8 @@
   .services {
     .services__wrapper {
       max-width: 1140px;
-      .services__slider-mobile, .services__slider-desktop-medium {
+      .services__slider-mobile,
+      .services__slider-desktop-medium {
         display: none;
       }
       .services__slider-desktop-large {
@@ -226,13 +259,13 @@
         }
         .swiper-button-next,
         .swiper-rtl .swiper-button-prev {
-          right: 100px;
+          right: 40px;
           left: auto;
           color: var(--button-grey);
         }
         .swiper-button-prev,
         .swiper-rtl .swiper-button-next {
-          left: 100px;
+          left: 40px;
           right: auto;
           color: var(--button-grey);
         }
