@@ -1,61 +1,77 @@
 @media screen and (min-width: 375px) {
+  .questions__title {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 140px;
+    max-width: 85%;
+    margin: 0 auto; }
+    .questions__title .questions__title__h3 {
+      font-size: 24px;
+      font-weight: 700;
+      text-align: center;
+      margin: 20px 0;
+      color: var(--white); }
+    .questions__title .questions__title__div-hl {
+      width: 85px;
+      height: 2px;
+      background-color: var(--button-orange);
+      margin: 20px 0; }
+
   .questions-accordion {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center; }
-
-  .container {
-    width: 100%;
-    margin: 0 auto;
-    padding: 10px 20px; }
-
-  .accordion-item {
-    margin: 16px 0; }
-    .accordion-item:target .answer {
-      max-height: 100px;
-      border-radius: 0px 0px 10px 10px; }
-    .accordion-item:target .accordion-link {
-      border: none;
-      border-radius: 10px 10px 0px 0px;
-      background-color: var(--white);
-      color: black; }
-      .accordion-item:target .accordion-link .accordion-arr-r {
-        display: none; }
-      .accordion-item:target .accordion-link .accordion-arr-down {
-        display: block; }
-
-  .accordion-link {
-    width: 100%;
-    min-height: 64px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border: 1px solid var(--circle-border);
-    border-radius: 10px;
-    color: white;
-    text-decoration: none; }
-    .accordion-link h3 {
-      font-weight: 700;
-      font-size: 16px;
-      padding: 12px 0px 10px 22px;
-      margin: 0; }
-    .accordion-link img {
-      margin: 5px 15px; }
-    .accordion-link .accordion-arr-down {
-      display: none; }
-
-  .answer {
-    max-height: 0;
-    overflow: hidden;
-    position: relative;
-    background-color: white;
-    transition: max-height 350ms; }
-    .answer p {
-      color: black;
-      font-size: 14px;
-      font-weight: 300;
-      padding: 10px 15px;
-      margin: 0; } }
+    .questions-accordion .container {
+      width: 100%;
+      margin: 0 auto;
+      padding: 10px 20px; }
+      .questions-accordion .container .accordion-item {
+        margin: 16px 0; }
+        .questions-accordion .container .accordion-item:target .answer {
+          max-height: 152px;
+          border-radius: 0px 0px 10px 10px; }
+        .questions-accordion .container .accordion-item:target .accordion-link {
+          border: none;
+          border-radius: 10px 10px 0px 0px;
+          background-color: var(--white);
+          color: black; }
+          .questions-accordion .container .accordion-item:target .accordion-link .accordion-arr-r {
+            display: none; }
+          .questions-accordion .container .accordion-item:target .accordion-link .accordion-arr-down {
+            display: block; }
+      .questions-accordion .container .accordion-link {
+        width: 100%;
+        min-height: 64px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border: 1px solid var(--circle-border);
+        border-radius: 10px;
+        color: white;
+        text-decoration: none; }
+        .questions-accordion .container .accordion-link h3 {
+          font-weight: 700;
+          font-size: 16px;
+          padding: 15px 0px 10px 22px;
+          margin: 0; }
+        .questions-accordion .container .accordion-link img {
+          margin: 5px 15px; }
+        .questions-accordion .container .accordion-link .accordion-arr-down {
+          display: none; }
+      .questions-accordion .container .answer {
+        max-height: 0;
+        overflow: hidden;
+        position: relative;
+        background-color: white;
+        transition: max-height 350ms; }
+        .questions-accordion .container .answer p {
+          color: black;
+          font-size: 14px;
+          font-weight: 300;
+          padding: 0px 0px 10px 22px;
+          margin: 0; } }
 
 /*# sourceMappingURL=questions.css.map */

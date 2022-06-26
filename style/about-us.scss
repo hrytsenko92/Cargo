@@ -36,7 +36,7 @@
       .about-us__img {
         max-width: 400px;
         margin: 0 auto;
-        padding: 0 20px;
+        padding: 0 45px;
         img {
           width: 100%;
           height: auto;
@@ -50,7 +50,7 @@
 
 @media screen and (min-width: 1024px) {
   .about-us {
-    margin: o auto;
+    margin: 0 auto;
     padding: 90px 0 50px;
     .about-us__wrapper {
       max-width: 1140px;
@@ -62,13 +62,24 @@
         grid-column: 1/2;
         grid-row: 1/2;
         justify-self: flex-start;
-        align-self: end;
+        align-items: start;
         padding-left: 20px;
+        .about-us__title__h3  {
+          margin: 0;
+          font-size: 36px;
+          font-weight: 700;
+        }
+        .about-us__title__div-hl {
+        }
       }
       .about-us__more-details {
         grid-column: 1/2;
         grid-row: 2/3;
-        align-self: center;
+        align-self: start;
+        padding: 0 20px;
+        p {
+          text-align: start;
+        }
       }
       .about-us__img {
         grid-column: 2/3;
@@ -76,6 +87,7 @@
         align-self: center;
         max-width: 647px;
         max-height: 632px;
+        padding: 0 15px;
       }
     }
   }
