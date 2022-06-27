@@ -34,6 +34,34 @@
       .cooperation .cooperation__container .cooperation__grid-wrapper {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr; } }
+        grid-template-rows: auto auto auto auto; }
+        .cooperation .cooperation__container .cooperation__grid-wrapper .cooperation__grid-item-one {
+          grid-column: 1/2;
+          grid-row: 1/2; }
+          .cooperation .cooperation__container .cooperation__grid-wrapper .cooperation__grid-item-one img {
+            width: 100%;
+            height: auto; }
+        .cooperation .cooperation__container .cooperation__grid-wrapper .cooperation__grid-item-two {
+          grid-column: 1/2;
+          grid-row: 2/3; }
+          .cooperation .cooperation__container .cooperation__grid-wrapper .cooperation__grid-item-two p {
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 300;
+            color: var(--white); }
+        .cooperation .cooperation__container .cooperation__grid-wrapper .cooperation__grid-item-three {
+          grid-column: 1/2;
+          grid-row: 3/4; }
+          .cooperation .cooperation__container .cooperation__grid-wrapper .cooperation__grid-item-three img {
+            width: 100%;
+            height: auto; }
+        .cooperation .cooperation__container .cooperation__grid-wrapper .cooperation__grid-item-four {
+          grid-column: 1/2;
+          grid-row: 4/5; }
+          .cooperation .cooperation__container .cooperation__grid-wrapper .cooperation__grid-item-four p {
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 300;
+            color: var(--white); } }
 
 /*# sourceMappingURL=cooperation.css.map */
