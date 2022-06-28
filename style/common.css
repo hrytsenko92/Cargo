@@ -9,6 +9,7 @@
 @import url("about-us.css");
 @import url("questions.css");
 @import url("cooperation.css");
+@import url("footer.css");
 
 :root {
   --background: #282b38;

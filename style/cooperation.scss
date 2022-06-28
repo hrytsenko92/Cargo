@@ -1,15 +1,12 @@
 @media screen and (min-width: 375px) {
   .cooperation {
     max-width: 1920px;
-    padding-left: 50px;
-    padding-right: 50px;
     margin: 0 auto;
     .cooperation__container {
-        min-width: 100%;
-        height: 100%;
-        margin: 0 auto;
-        border-radius: 20px;
-        background-color: var(--background-second);
+      min-width: 100%;
+      height: 100%;
+      margin: 0 auto;
+      background-color: var(--background-second);
       display: flex;
       flex-flow: column nowrap;
       align-items: center;
@@ -42,6 +39,8 @@
         }
       }
       .cooperation__grid-wrapper {
+        padding: 0 20px;
+        margin-bottom: 50px;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: auto auto auto auto;
@@ -114,6 +113,16 @@
   }
 }
 
+@media screen and (min-width: 1024px) {
+  .cooperation {
+    padding-left: 50px;
+    padding-right: 50px;
+    .cooperation__container {
+      border-radius: 20px;
+    }
+  }
+}
+
 @media screen and (min-width: 1208px) {
   .cooperation {
     .cooperation__container {
@@ -121,6 +130,7 @@
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         gap: 30px;
+
         .cooperation__grid-item-one {
           grid-column: 2/3;
           grid-row: 1/2;
