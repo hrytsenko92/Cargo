@@ -8,10 +8,13 @@ $('.navTrigger').click(function () {
 
 function myFunctionMain() {
     let x = document.getElementById("main");
+    let y = document.getElementById("footer");
     if (x.style.display === "none") {
       x.style.display = "block";
+      y.style.display = "block";
     } else {
       x.style.display = "none";
+      y.style.display = "none";
     }
   }
 

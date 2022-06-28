@@ -9,59 +9,115 @@
   max-width: 1208px;
   width: 100%;
   z-index: 75;
-}
-.nav {
-  box-sizing: content-box;
-  max-width: 1140px;
-  height: 64px;
-  line-height: 65px;
-  text-align: center;
-  margin: 0 34px 0 34px;
-  padding-top: 18px;
-  padding-bottom: 18px;
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
-}
-.nav div.logo {
-  float: left;
-  img {
-    margin-top: 8px;
+  .nav {
+    box-sizing: content-box;
+    max-width: 1140px;
+    height: 64px;
+    line-height: 65px;
+    text-align: center;
+    margin: 0 34px 0 34px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    .logo {
+      float: left;
+      img {
+        margin-top: 8px;
+      }
+    }
   }
 }
-.nav div.main_list {
+
+.main_list {
   float: right;
   width: 80%;
 }
-.nav div.main_list .navlinks {
+.navlinks {
   width: 100%;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
+  align-items: center;
   gap: 10px;
   list-style: none;
   margin: 0;
   padding-inline-start: 0px;
-  li a {
-    text-decoration: none;
-    color: #fff;
-    line-height: 23.3px;
-    font-size: 16px;
-    font-weight: 400;
+  li {
+    a {
+      text-decoration: none;
+      color: #fff;
+      line-height: 23.3px;
+      font-size: 16px;
+      font-weight: 400;
+    }
   }
-  .orange-btn {
-    width: 171px;
-    height: 50px;
-    background-color: var(--button-orange);
+  .orange-button {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: center;
+    max-width: 295px;
+    height: 68px;
     border-radius: 90px;
-    border: none;
-    color: var(--white);
-    font-size: 15px;
-    font-weight: 600;
+    background-color: var(--button-orange);
   }
 }
 .navTrigger {
   display: none;
+  cursor: pointer;
+  width: 30px;
+  height: 25px;
+  margin: auto;
+  position: absolute;
+  right: 20px;
+  top: 0;
+  bottom: 0;
+  i {
+    background-color: #fff;
+    border-radius: 2px;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+  }
 }
+
+
+.navTrigger i:nth-child(1) {
+  -webkit-animation: outT 0.8s backwards;
+  animation: outT 0.8s backwards;
+  -webkit-animation-direction: reverse;
+  animation-direction: reverse;
+}
+.navTrigger i:nth-child(2) {
+  margin: 5px 0;
+  -webkit-animation: outM 0.8s backwards;
+  animation: outM 0.8s backwards;
+  -webkit-animation-direction: reverse;
+  animation-direction: reverse;
+}
+.navTrigger i:nth-child(3) {
+  -webkit-animation: outBtm 0.8s backwards;
+  animation: outBtm 0.8s backwards;
+  -webkit-animation-direction: reverse;
+  animation-direction: reverse;
+}
+.navTrigger.active i:nth-child(1) {
+  -webkit-animation: inT 0.8s forwards;
+  animation: inT 0.8s forwards;
+}
+.navTrigger.active i:nth-child(2) {
+  -webkit-animation: inM 0.8s forwards;
+  animation: inM 0.8s forwards;
+}
+.navTrigger.active i:nth-child(3) {
+  -webkit-animation: inBtm 0.8s forwards;
+  animation: inBtm 0.8s forwards;
+}
+
 @media screen and (max-width: 1025px) {
   header.header {
     nav.nav {
@@ -95,7 +151,7 @@
     left: 0;
     bottom: 0;
     background-color: var(--background-second);
-    background-position: center top;
+    background-position: center top;////
   }
   .nav div.main_list ul li {
     width: 100%;
@@ -106,61 +162,13 @@
     width: 100%;
     font-size: 24px;
     font-weight: 400;
-    padding: 20px;
+    // padding: 20px;
   }
   .nav div.media_button {
     display: block;
   }
 }
-.navTrigger {
-  cursor: pointer;
-  width: 30px;
-  height: 25px;
-  margin: auto;
-  position: absolute;
-  right: 20px;
-  top: 0;
-  bottom: 0;
-}
-.navTrigger i {
-  background-color: #fff;
-  border-radius: 2px;
-  content: "";
-  display: block;
-  width: 100%;
-  height: 4px;
-}
-.navTrigger i:nth-child(1) {
-  -webkit-animation: outT 0.8s backwards;
-  animation: outT 0.8s backwards;
-  -webkit-animation-direction: reverse;
-  animation-direction: reverse;
-}
-.navTrigger i:nth-child(2) {
-  margin: 5px 0;
-  -webkit-animation: outM 0.8s backwards;
-  animation: outM 0.8s backwards;
-  -webkit-animation-direction: reverse;
-  animation-direction: reverse;
-}
-.navTrigger i:nth-child(3) {
-  -webkit-animation: outBtm 0.8s backwards;
-  animation: outBtm 0.8s backwards;
-  -webkit-animation-direction: reverse;
-  animation-direction: reverse;
-}
-.navTrigger.active i:nth-child(1) {
-  -webkit-animation: inT 0.8s forwards;
-  animation: inT 0.8s forwards;
-}
-.navTrigger.active i:nth-child(2) {
-  -webkit-animation: inM 0.8s forwards;
-  animation: inM 0.8s forwards;
-}
-.navTrigger.active i:nth-child(3) {
-  -webkit-animation: inBtm 0.8s forwards;
-  animation: inBtm 0.8s forwards;
-}
+
 @-webkit-keyframes inM {
   50% {
     -webkit-transform: rotate(0deg);

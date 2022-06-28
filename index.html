@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cargo</title>
-  <link rel="stylesheet" href="style/common.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="style/common.css">
 </head>
 
 <body>
@@ -18,12 +18,12 @@
       </div>
       <div id="mainListDiv" class="main_list">
         <ul class="navlinks">
-          <li class="i1"><a href="#">Цены и сроки</a></li>
-          <li class="i2"><a href="#">Услуги</a></li>
-          <li class="i3"><a href="#">О компании</a></li>
-          <li class="i4"><a href="#">Контакты</a></li>
-          <li class="i5"><a href="#">Оформить груз</a></li>
-          <li class="i6"><button class="orange-btn">Оставить заявку</button></li>
+          <li class="i1"><a href="#transportation">Цены и сроки</a></li>
+          <li class="i2"><a href="#services">Услуги</a></li>
+          <li class="i3"><a href="#about-us">О компании</a></li>
+          <li class="i4"><a href="#contacts">Контакты</a></li>
+          <li class="i5"><a href="#cooperation">Оформить груз</a></li>
+          <li class="i6"><a href="#questions-form-wrapper" class="orange-button">Оставить заявку</a></li>
         </ul>
       </div>
       <span onclick="myFunctionMain()" class="navTrigger">
@@ -178,7 +178,7 @@
                 action="www.exp.com">
                 <div class="upload-photo-form__exmpl-reset ">
                   <span class="upload-photo-form__exmpl-reset__label">
-                    <label for="upload-photo-span">фотография.jpeg</label>
+                    <label for="reset">фотография.jpeg</label>
                   </span>
                   <span class="upload-photo-form__exmpl-reset__reset">
                     <input type="reset" name="reset" id="reset" onclick="resetImg()" value="Удалить фото">
@@ -189,7 +189,7 @@
                     <span>Загрузить фото товара</span>
                     <input type="file" id="upload-input" onchange="changeHandler(event)">
                   </label>
-                  <img id="myimage" src="img/check-mark.png">
+                  <img id="myimage" src="img/check-mark.png" alt="check-mark">
                 </div>
               </form>
               <div class="one-panel-btn-wrap">
@@ -483,7 +483,7 @@
         </div>
       </div>
     </section>
-    <section class="transportation">
+    <section class="transportation" id="transportation">
       <div class="transportation-wrapper">
         <div class="transportation__title">
           <h3 class="transportation__title__h3">Варианты доставки грузов из Китая</h3>
@@ -974,7 +974,7 @@
         </div>
       </div>
     </section>
-    <section class="services">
+    <section class="services" id="services">
       <div class="services__wrapper">
         <div class="services__title">
           <h3 class="services__title__h3">Услуги</h3>
@@ -1149,7 +1149,7 @@
         </div>
       </div>
     </section>
-    <section class="about-us">
+    <section class="about-us" id="about-us">
       <div class="about-us__wrapper">
         <div class="about-us__title">
           <h3 class="about-us__title__h3">О компании</h3>
@@ -1251,7 +1251,7 @@
           </div>
         </div>
       </div>
-      <div class="questions-form-wrapper">
+      <div class="questions-form-wrapper" id="questions-form-wrapper">
         <form action="example.com" class="questions-form">
           <h3 class="questions-form__h3">Остались вопросы?</h3>
           <p class="questions-form__p">Оставьте заявку и наш менеджер ответит вам в ближайшее время</p>
@@ -1267,7 +1267,7 @@
         </form>
       </div>
     </section>
-    <section class="cooperation">
+    <section class="cooperation" id="cooperation">
       <div class="cooperation__container">
         <div class="cooperation__title">
           <h3 class="cooperation__title__h3">Готовы к сотрудничеству?</h3>
@@ -1283,16 +1283,14 @@
               его стоимость и количество. А так-же прикрепив фотографии к заявке.</p>
             <p>• Если требуется проверка товара на соответсвие количеству, то при оформлении груза на нашем сайте
               укажите это в графе "Примечание". Данная услуга платная и составляет 3 юаня за одну позицию в заказе.
-              Любые дополнительные проверки груза обсуждаются индивидуально в том числе и их стоимость.
+              Любые дополнительные проверки груза обсуждаются индивидуально в том числе и их стоимость.</p>
             <p>• До отправки груза на наш склад в Китае обязательно позаботьтесь о том, чтобы сделать маркировку, с
               номером Вашего заказа у нас на сайте, для каждой внешней коробки, чтобы мы смогли определить именно Ваш
               груз. Если у Вас нет возможности сделать это самостоятельно, то попросите об этом своего поставщика.</p>
-            </p>
-
           </div>
           <div class="cooperation__grid-item-three">
             <img src="/img/cargo-truck.png" alt="cargo-truck">
-           </div>
+          </div>
           <div class="cooperation__grid-item-four">
             <p>• После отправки груза на наш склад в Китае, Вам обязательно нужно указать трек-номер для отслеживания
               посылок по Китаю для каждой позиции в заказе. Внести трек-номер можно на странице заказа. Трек-номер - это
@@ -1310,11 +1308,11 @@
       </div>
     </section>
   </main>
-  <footer class="footer">
+  <footer class="footer" id="footer">
     <div class="footer-wrapper">
       <div class="hr-line"></div>
       <div class="footer-grid">
-        <div class="contacts">
+        <div class="contacts" id="contacts">
           <div class="logo">
             <img src="img/logo.png" alt="logo">
           </div>
