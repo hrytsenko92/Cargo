@@ -1,8 +1,104 @@
-.footer {
-  padding: 50px 0; }
-  .footer .footer-wrapper .hr-line {
-    margin: 0 20px;
-    height: 2px;
-    background-color: var(--button-orange); }
+@media screen and (min-width: 375px) {
+  .footer {
+    padding: 55px 0; }
+    .footer .footer-wrapper .hr-line {
+      height: 2px;
+      background-color: var(--button-orange); }
+    .footer .footer-wrapper .footer-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      justify-items: center;
+      padding-top: 40px; }
+      .footer .footer-wrapper .footer-grid .contacts {
+        grid-column: 1/2;
+        grid-row: 1/2; }
+        .footer .footer-wrapper .footer-grid .contacts .logo {
+          display: flex;
+          flex-flow: row nowrap;
+          justify-content: center;
+          align-items: center; }
+          .footer .footer-wrapper .footer-grid .contacts .logo img {
+            width: 100%;
+            max-width: 174px;
+            height: auto; }
+        .footer .footer-wrapper .footer-grid .contacts ul {
+          list-style: none;
+          text-align: center;
+          color: var(--white);
+          padding-inline-start: 0;
+          font-size: 14px;
+          font-weight: 400; }
+          .footer .footer-wrapper .footer-grid .contacts ul li {
+            padding: 5px 0; }
+        .footer .footer-wrapper .footer-grid .contacts .socials {
+          display: flex;
+          flex-flow: row nowrap;
+          justify-content: center;
+          align-items: center; }
+          .footer .footer-wrapper .footer-grid .contacts .socials img {
+            margin: 0 10px; }
+      .footer .footer-wrapper .footer-grid .transp {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        display: none; }
+      .footer .footer-wrapper .footer-grid .serv {
+        grid-column: 3/4;
+        grid-row: 1/2;
+        display: none; }
+      .footer .footer-wrapper .footer-grid .info {
+        grid-column: 4/5;
+        grid-row: 1/2;
+        display: none; }
+      .footer .footer-wrapper .footer-grid .transp span, .footer .footer-wrapper .footer-grid .serv span, .footer .footer-wrapper .footer-grid .info span {
+        font-size: 20px;
+        line-height: 29px;
+        font-weight: 700;
+        color: var(--white); }
+      .footer .footer-wrapper .footer-grid .transp ul, .footer .footer-wrapper .footer-grid .serv ul, .footer .footer-wrapper .footer-grid .info ul {
+        padding-inline-start: 0;
+        list-style: none;
+        font-size: 16px;
+        line-height: 26px;
+        font-weight: 400;
+        color: var(--white); }
+        .footer .footer-wrapper .footer-grid .transp ul li, .footer .footer-wrapper .footer-grid .serv ul li, .footer .footer-wrapper .footer-grid .info ul li {
+          padding: 5px 0; } }
+@media screen and (min-width: 768px) {
+  .footer {
+    padding: 55px 50px; }
+    .footer .footer-wrapper .footer-grid {
+      grid-template-columns: 1.2fr 1fr;
+      grid-template-rows: 1fr;
+      justify-items: start; }
+      .footer .footer-wrapper .footer-grid .contacts {
+        grid-column: 1/2;
+        grid-row: 1/2; }
+        .footer .footer-wrapper .footer-grid .contacts .logo {
+          justify-content: flex-start; }
+        .footer .footer-wrapper .footer-grid .contacts ul {
+          text-align: start; }
+        .footer .footer-wrapper .footer-grid .contacts .socials {
+          justify-content: flex-start; }
+      .footer .footer-wrapper .footer-grid .transp {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        display: block; } }
+@media screen and (min-width: 1024px) {
+  .footer .footer-wrapper .footer-grid {
+    grid-template-columns: 1.3fr 1fr 1fr; }
+    .footer .footer-wrapper .footer-grid .serv {
+      grid-column: 3/4;
+      grid-row: 1/2;
+      display: block; } }
+@media screen and (min-width: 1208px) {
+  .footer .footer-wrapper {
+    max-width: 1140px;
+    margin: 0 auto; }
+    .footer .footer-wrapper .footer-grid {
+      grid-template-columns: 1.3fr 1fr 1fr 1fr; }
+      .footer .footer-wrapper .footer-grid .info {
+        grid-column: 4/5;
+        display: block; } }
 
 /*# sourceMappingURL=footer.css.map */
