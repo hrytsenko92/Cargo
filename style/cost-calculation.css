@@ -107,7 +107,7 @@
           grid-column: 2/3;
           grid-row: 1/2;
           justify-self: end; }
-          .cost-calculation .wrapper-form .panels .one-panel .form-catalog__capacity-wrap .capacity-wrap__btn-wrap button {
+          .cost-calculation .wrapper-form .panels .one-panel .form-catalog__capacity-wrap .capacity-wrap__btn-wrap .capacity-wrap__btn {
             color: var(--button-orange);
             background-color: inherit;
             border: 0;
@@ -264,12 +264,13 @@
       background: rgba(0, 0, 0, 0.7);
       transition: opacity 500ms;
       visibility: hidden;
-      opacity: 0; }
+      opacity: 0;
+      z-index: 76; }
     .cost-calculation .wrapper-form .overlay:target {
       visibility: visible;
       opacity: 1; }
     .cost-calculation .wrapper-form .popup {
-      margin: 70px auto;
+      margin: 170px auto;
       padding: 20px;
       background: #fff;
       border-radius: 5px;
